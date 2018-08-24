@@ -1,3 +1,17 @@
+<style>
+#table1 thead tr th, #table1 tbody tr td{padding:15px 5px;}
+#table1 thead tr th:nth-child(1), #table1 tbody tr td:nth-child(1){padding:15px; width:44%;}
+#table1 thead tr th:nth-child(3){width:13%;}
+#table2 thead tr th:nth-child(1){width: 63%;}
+@media (min-width: 525px){
+	#table2 thead tr th:nth-child(3), #table2 thead tr th:nth-child(2){padding:15px 5px;width:12%;}
+	#table2 tbody tr td:nth-child(2){padding:15px 5px;width: 12%;}
+}
+@media (max-width:524px){
+	#table2 thead tr th:nth-child(3){padding:15px 4px;}
+	#table2 tbody tr td:nth-child(2){padding:15px 3px;}
+}
+</style>
 <h1 id="abm-category-home-title">Cell Immortalization Service</h1>
 <nav id="abm-navbar" class="navbar navbar-fixed-top abm-navbar abm-affix abm-category-navbar-relative hidden-xs">
 	<div class="abm-container-fluid">
@@ -49,7 +63,7 @@
 				<h3 class="abm-perfect-h3">Service Details</h3>
 				<div class="table-title">Core Services</div>
 				<div>
-					<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table2">
+					<table id="table1" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table2">
 						<thead>
 							<tr>
 								<th>Our Basic Package (C195) Includes</th>
@@ -89,7 +103,7 @@
 				</div>
 				<div class="table-title">Add-On Services</div>
 				<div>
-					<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+					<table id="table2" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
 						<thead>
 							<tr>
 								<th>Service Name</th>
