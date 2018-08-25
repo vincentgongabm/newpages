@@ -1,5 +1,3 @@
-viral genome sequencing
-FAQ alignment
 geoprice removal
 popup mailto:ngs@abmgood.com
 Service Listing color doesnt stay when clicked
