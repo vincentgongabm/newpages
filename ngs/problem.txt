@@ -1,5 +1,3 @@
-geoprice removal
-popup mailto:ngs@abmgood.com
 Service Listing color doesnt stay when clicked
 
 IB00001 <10MB $50 >10MB IB00002
