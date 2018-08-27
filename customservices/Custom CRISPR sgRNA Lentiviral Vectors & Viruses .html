@@ -1,3 +1,26 @@
+<style>
+    #table1 tbody tr td:nth-child(1) {padding: 15px 5px 15px 15px;}
+    #table1 tbody tr td, #table1 thead tr th{padding:15px 5px;}
+    #table2 thead tr th:nth-child(1){padding: 15px 5px 15px 15px;}
+    #table2 thead tr th:nth-child(2){padding: 15px 5px;}
+    #table2 thead tr th:nth-child(3){padding: 15px 5px; width: 14%;}
+    #table2 thead tr th:nth-child(4){padding: 15px 5px;}
+    #table2 tbody tr td:nth-child(2){padding: 15px 5px;}
+    #table2 tbody tr td:nth-child(3){padding: 15px 5px;}
+
+    @media(max-width:460px){
+    #table1 tbody tr td:nth-child(1) {padding: 15px 5px;}
+    #table2 tbody tr td:nth-child(5), #table2 thead tr th:nth-child(5){padding: 15px 5px 15px 0px;}
+    #table3 thead tr th:nth-child(1){padding: 15px 5px 15px 15px;}
+    #table3 thead tr th:nth-child(2){padding: 15px 5px 15px 24px;}
+    #table3 thead tr th:nth-child(3){padding: 15px 0px;text-align: center;}
+    #table3 thead tr th:nth-child(4){padding: 15px 4px;text-align: center;}
+    #table3 tbody tr td:nth-child(1){padding: 15px 5px 15px 15px;}
+    #table3 tbody tr td:nth-child(2){padding: 15px 5px 15px 24px;}
+    #table3 tbody tr td:nth-child(3){padding: 15px 5px;}
+    #table3 tbody tr td:nth-child(5), #table3 thead tr th:nth-child(5){padding: 15px 5px;}
+    }
+</style>
 <h1 id="abm-category-home-title">Custom CRISPR sgRNA Lentiviral Vectors &amp; Viruses</h1>
 <nav id="abm-navbar" class="navbar navbar-fixed-top abm-navbar abm-affix abm-category-navbar-relative hidden-xs">
 	<div class="abm-container-fluid">
@@ -19,12 +42,12 @@
 			<p>Use <strong>abm</strong>’s All-in-One lentivectors and lentiviruses that express spCas9 along with the sgRNA to simplify the delivery of CRISPR/Cas9 technology right into the target cell. Alternatively, custom sgRNA lentivectors and lentiviruses can be used to deliver sgRNAs into cells that already express the spCas9 nuclease, and thus recruit spCas9 to the target gene (Check out <strong>abm</strong>’s <a class="orange-link" href="/catalog/category/view/s/cas9-expressing-cell-lines/id/47/">Cas9-Expressing Stable Cell Lines</a>).<br /><br /></p>
 			<div class="table-title">Available Custom CRISPR Vectors and Viruses:</div>
 			<div>
-				<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table2">
+				<table id="table1" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table2">
 					<thead>
 						<tr>
 							<th></th>
-							<th><a style="color: black;" href="/contract-research-cro-services/crispr-genome-editing-services/custom-crispr-sgrna-aav-vectors-viruses"><span style="text-decoration: underline;">AAV Vector/Virus</span></a></th>
-							<th style="color: white;">Lentivector/virus</th>
+							<th><a style="color: black;" href="/contract-research-cro-services/crispr-genome-editing-services/custom-crispr-sgrna-aav-vectors-viruses"><span style="text-decoration: underline;">AAV Vector<wbr>/Virus</span></a></th>
+							<th style="color: white;">Lentivector<wbr>/virus</th>
 							<th><a style="color: black;" href="/contract-research-cro-services/crispr-genome-editing-services/custom-crispr-sgrna-non-viral-vectors"><span style="text-decoration: underline;">Non-Viral Vector</span></a></th>
 							<th style="text-align: left;"><a style="color: black;" href="/contract-research-cro-services/crispr-genome-editing-services/custom-crispr-sgrna-adenovirus"><span style="text-decoration: underline;">Adenovirus</span></a></th>
 						</tr>
@@ -84,13 +107,13 @@
 				<h3 class="abm-perfect-h3">Service Details</h3>
 				<div class="table-title">Cloning Services</div>
 				<div>
-					<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+					<table id="table2" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
 						<thead>
 							<tr>
-								<th>Service Name</th>
+								<th>Service&nbsp;Name</th>
 								<th>Vector</th>
 								<th>Quantity</th>
-								<th>Cat. No.</th>
+								<th>Cat.&nbsp;No.</th>
 								<th>Price</th>
 							</tr>
 						</thead>
@@ -127,35 +150,35 @@
 					</table>
 				</div>
 				<div>
-					<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+					<table id="table3" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
 						<thead>
 							<tr>
 								<th>Packaging Service - Standard</th>
 								<th>Size</th>
 								<th>Titer</th>
-								<th>CAT. NO.</th>
+								<th>CAT.&nbsp;NO.</th>
 								<th>PRICE</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>Custom CRISPR Lentivirus Packaging – single target</td>
-								<td>300 μl</td>
-								<td>10<sup>7</sup> IU/ml</td>
+								<td>300&nbsp;μl</td>
+								<td>10<sup>7</sup>&nbsp;IU/ml</td>
 								<td>C445</td>
 								<td>$<span class="customServicePriceGeoIP">420.00</span></td>
 							</tr>
 							<tr>
 								<td>Custom CRISPR Lentivirus Packaging – three targets, individually packaged</td>
-								<td>3 x 300 μl</td>
-								<td>10<sup>7</sup> IU/ml</td>
+								<td>3&nbsp;x&nbsp;300&nbsp;μl</td>
+								<td>10<sup>7</sup>&nbsp;IU/ml</td>
 								<td>C447</td>
 								<td>$<span class="customServicePriceGeoIP">940.00</span></td>
 							</tr>
 							<tr>
 								<td>Custom CRISPR Lentivirus Packaging – three targets, pooled packaging</td>
-								<td>300 μl</td>
-								<td>10<sup>7</sup> IU/ml</td>
+								<td>300&nbsp;μl</td>
+								<td>10<sup>7</sup>&nbsp;IU/ml</td>
 								<td>C448</td>
 								<td>$<span class="customServicePriceGeoIP">420.00</span></td>
 							</tr>

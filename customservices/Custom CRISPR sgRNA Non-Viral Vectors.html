@@ -1,3 +1,17 @@
+<style>
+    #table1 tbody tr td:nth-child(1) {padding: 15px 5px 15px 15px;}
+    #table1 tbody tr td, #table1 thead tr th{padding:15px 5px;}
+    #table2 thead tr th:nth-child(1){padding: 15px 5px 15px 15px;}
+    #table2 thead tr th:nth-child(2){padding: 15px 4px;}
+    #table2 thead tr th:nth-child(3){padding: 15px 4px;}
+    #table2 thead tr th:nth-child(4){padding: 15px 4px;}
+    #table2 tbody tr td:nth-child(2){padding: 15px 4px;}
+    @media(max-width:470px){
+        #table1 tbody tr td:nth-child(1) {padding: 15px 5px;}
+        #table2 tbody tr td:nth-child(3){padding: 15px 4px;}
+        #table2 tbody tr td:nth-child(5), #table2 thead tr th:nth-child(5){padding: 15px 5px 15px 0px;}
+    }
+</style>
 <h1 id="abm-category-home-title">Custom CRISPR sgRNA Non-Viral Vectors</h1>
 <nav id="abm-navbar" class="navbar navbar-fixed-top abm-navbar abm-affix abm-category-navbar-relative hidden-xs">
 	<div class="abm-container-fluid">
@@ -21,12 +35,12 @@
 			<p><br /><br /></p>
 			<div class="table-title">Available custom CRISPR Vectors and Viruses:</div>
 			<div>
-				<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table2">
+				<table id="table1" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table2">
 					<thead>
 						<tr>
 							<th></th>
-							<th><a style="color: black;" href="/contract-research-cro-services/crispr-genome-editing-services/custom-crispr-sgrna-aav-vectors-viruses"><span style="text-decoration: underline;">AAV Vector/Virus</span></a></th>
-							<th><a style="color: black;" href="/contract-research-cro-services/crispr-genome-editing-services/custom-crispr-sgrna-lentiviral-vectors-viruses"><span style="text-decoration: underline;">Lentivector/virus</span></a></th>
+							<th><a style="color: black;" href="/contract-research-cro-services/crispr-genome-editing-services/custom-crispr-sgrna-aav-vectors-viruses"><span style="text-decoration: underline;">AAV Vector<wbr>/Virus</span></a></th>
+							<th><a style="color: black;" href="/contract-research-cro-services/crispr-genome-editing-services/custom-crispr-sgrna-lentiviral-vectors-viruses"><span style="text-decoration: underline;">Lentivector<wbr>/virus</span></a></th>
 							<th style="color: white;">Non-Viral Vector</th>
 							<th style="text-align: left;"><a style="color: black;" href="/contract-research-cro-services/crispr-genome-editing-services/custom-crispr-sgrna-adenovirus"><span style="text-decoration: underline;">Adenovirus</span></a></th>
 						</tr>
@@ -82,13 +96,13 @@
 			<div class="col-lg-8">
 				<h3 class="abm-perfect-h3">Service Details</h3>
 				<div>
-					<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+					<table id="table2" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
 						<thead>
 							<tr>
-								<th>Service Name</th>
+								<th>Service&nbsp;Name</th>
 								<th>Vector</th>
 								<th>Quantity</th>
-								<th>Cat. No.</th>
+								<th>Cat.&nbsp;No.</th>
 								<th>Price</th>
 							</tr>
 						</thead>
@@ -96,28 +110,28 @@
 							<tr>
 								<td>Custom CRISPR sgRNA Non-Viral Vector (for spCas9) – single target</td>
 								<td>pNV-sgRNA-GFP</td>
-								<td>1.0 ug</td>
+								<td>1.0&nbsp;ug</td>
 								<td>C439</td>
 								<td>$<span class="customServicePriceGeoIP">135.00</span></td>
 							</tr>
 							<tr>
 								<td>Custom CRISPR sgRNA Non-Viral Vector (for spCas9) – set of three targets</td>
 								<td>pNV-sgRNA-GFP</td>
-								<td>3 x 1.0 ug</td>
+								<td>3&nbsp;x&nbsp;1.0&nbsp;ug</td>
 								<td>C443</td>
 								<td>$<span class="customServicePriceGeoIP">360.00</span></td>
 							</tr>
 							<tr>
 								<td>Custom CRISPR All-in-One Non-Viral Vector (with spCas9) – single target</td>
 								<td>pNV-sgRNA-Cas9-2A-GFP</td>
-								<td>1.0 ug</td>
+								<td>1.0&nbsp;ug</td>
 								<td>C440</td>
 								<td>$<span class="customServicePriceGeoIP">125.00</span></td>
 							</tr>
 							<tr>
 								<td>Custom CRISPR All-in-One Non-Viral Vector(with spCas9) – set of three targets</td>
 								<td>pNV-sgRNA-Cas9-2A-GFP</td>
-								<td>3 x 1.0 ug</td>
+								<td>3&nbsp;x&nbsp;1.0&nbsp;ug</td>
 								<td>C444</td>
 								<td>$<span class="customServicePriceGeoIP">355.00</span></td>
 							</tr>

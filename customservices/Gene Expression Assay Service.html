@@ -1,3 +1,9 @@
+<style>
+    #table2 thead tr th:nth-child(1){width:50%;}
+    #table3 tbody tr td:nth-child(1){width:50%;}
+    #table1 tbody tr td:nth-child(2){padding: 15px 5px;}
+    #table1 thead tr th:nth-child(3){padding: 15px 5px;width:20%;}
+</style>
 <h1 id="abm-category-home-title">Gene Expression Assay Service</h1>
 <nav id="abm-navbar" class="navbar navbar-fixed-top abm-navbar abm-affix abm-category-navbar-relative hidden-xs">
 	<div class="abm-container-fluid">
@@ -42,7 +48,7 @@
 			<div class="col-lg-8">
 				<h3 class="abm-perfect-h3">Service Details</h3>
 				<div>
-					<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+					<table id="table1" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
 						<thead>
 							<tr>
 								<th>Service</th>
@@ -73,11 +79,11 @@
 		<div class="col-lg-8">
 			<h3 class="abm-perfect-h3">Additional Info</h3>
 			<div class="table-title">Common Cell Type Markers – Free primer design service included</div>
-			<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+			<table id="table2" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
 				<thead>
 					<tr>
-						<th style="width: 50%;">Cell Type</th>
-						<th style="width: 50%; text-align: left;">Marker</th>
+						<th>Cell Type</th>
+						<th style="text-align: left;">Marker</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -100,15 +106,15 @@
 				</tbody>
 			</table>
 			<div class="table-title">Sample Submission Guideline</div>
-			<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+			<table id="table3" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
 				<tbody>
 					<tr>
-						<td style="width: 50%;">Total RNA</td>
-						<td style="width: 50%; text-align: left; color: black;">Minimum 2 ug / marker</td>
+						<td>Total RNA</td>
+						<td style="text-align: left; color: black;">Minimum 2 ug / marker</td>
 					</tr>
 					<tr>
-						<td style="width: 50%;">Cell Pellets</td>
-						<td style="width: 50%; text-align: left; color: black;">Minimum 1 million cells / marker</td>
+						<td>Cell Pellets</td>
+						<td style="text-align: left; color: black;">Minimum 1 million cells / marker</td>
 					</tr>
 				</tbody>
 			</table>

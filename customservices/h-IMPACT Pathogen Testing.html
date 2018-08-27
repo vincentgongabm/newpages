@@ -1,12 +1,17 @@
 <style type="text/css" xml="space">
-	<!--
-		#seebelow{padding-top: 140px;}
-		@media (max-width: 767px){
-			#seebelow{
-			padding-top: 80px;
-			}
-		}
-		-->
+    #seebelow{padding-top: 140px;}
+    @media (max-width: 767px){
+        #seebelow{
+        padding-top: 80px;
+        }
+    }
+    #table1 thead tr th:nth-child(3){padding: 15px 5px;width: 18%;}
+    #table1 tbody tr td:nth-child(2){padding:15px 5px}
+    @media (max-width:570px){
+        #table2 thead tr th:nth-child(2){padding:15px 5px;width:22%;}
+        #table2 thead tr th:nth-child(3){padding:15px 5px;width:22%;}
+        #table2 thead tr th:nth-child(4){padding:15px 5px;width:24%;}
+    }
 </style>
 <h1 id="abm-category-home-title">h-IMPACT Human Pathogen Testing Services</h1>
 <nav id="abm-navbar" class="navbar navbar-fixed-top abm-navbar abm-affix abm-category-navbar-relative hidden-xs">
@@ -53,7 +58,7 @@
 			<div class="col-lg-8">
 				<h3 class="abm-perfect-h3">Service Details</h3>
 				<div>
-					<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+					<table id="table1" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
 						<thead>
 							<tr>
 								<th>Service Name</th>
@@ -97,7 +102,7 @@
 			<b class="subtitle">Details on h-IMPACT Human Pathogen Testing Services</b>
 			<div>
 				To determine which service may be right for you, please read the virus information provided below. Additional individual agents are available (<a class="orange-link" href="#seebelow">see below</a>). A discount is available for 5 or more samples; please inquire prior to order placement.
-				<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+				<table id="table2" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
 					<thead>
 						<tr>
 							<th></th>
