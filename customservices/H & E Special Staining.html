@@ -14,9 +14,42 @@
 	// ]]>
 </script>
 <style xml="space">
-	<!--
-		.popover{position:absolute;top:0;left:0;z-index:1060;display:none;max-width:276px;padding:1px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-style:normal;font-weight:400;line-height:1.42857143;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2);line-break:auto}.popover.top{margin-top:-10px}.popover.right{margin-left:10px}.popover.bottom{margin-top:10px}.popover.left{margin-left:-10px}.popover-title{padding:8px 14px;margin:0;font-size:14px;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;border-radius:5px 5px 0 0}.popover-content{padding:9px 14px}.popover>.arrow,.popover>.arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid}.popover>.arrow{border-width:11px}.popover>.arrow:after{content:"";border-width:10px}.popover.top>.arrow{bottom:-11px;left:50%;margin-left:-11px;border-top-color:#999;border-top-color:rgba(0,0,0,.25);border-bottom-width:0}.popover.top>.arrow:after{bottom:1px;margin-left:-10px;content:" ";border-top-color:#fff;border-bottom-width:0}.popover.right>.arrow{top:50%;left:-11px;margin-top:-11px;border-right-color:#999;border-right-color:rgba(0,0,0,.25);border-left-width:0}.popover.right>.arrow:after{bottom:-10px;left:1px;content:" ";border-right-color:#fff;border-left-width:0}.popover.bottom>.arrow{top:-11px;left:50%;margin-left:-11px;border-top-width:0;border-bottom-color:#999;border-bottom-color:rgba(0,0,0,.25)}.popover.bottom>.arrow:after{top:1px;margin-left:-10px;content:" ";border-top-width:0;border-bottom-color:#fff}.popover.left>.arrow{top:50%;right:-11px;margin-top:-11px;border-right-width:0;border-left-color:#999;border-left-color:rgba(0,0,0,.25)}.popover.left>.arrow:after{right:1px;bottom:-10px;content:" ";
-		-->
+
+		.popover{position:absolute;top:0;left:0;z-index:1060;display:none;max-width:276px;padding:1px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-style:normal;font-weight:400;line-height:1.42857143;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2);line-break:auto}
+        .popover.top{margin-top:-10px}
+        .popover.right{margin-left:10px}
+        .popover.bottom{margin-top:10px}
+        .popover.left{margin-left:-10px}
+        .popover-title{padding:8px 14px;margin:0;font-size:14px;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;border-radius:5px 5px 0 0}
+        .popover-content{padding:9px 14px} .popover>.arrow,.popover>.arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid}
+        .popover>.arrow{border-width:11px}
+        .popover>.arrow:after{content:"";border-width:10px}
+        .popover.top>.arrow{bottom:-11px;left:50%;margin-left:-11px;border-top-color:#999;border-top-color:rgba(0,0,0,.25);border-bottom-width:0}
+        .popover.top>.arrow:after{bottom:1px;margin-left:-10px;content:" ";border-top-color:#fff;border-bottom-width:0}
+        .popover.right>.arrow{top:50%;left:-11px;margin-top:-11px;border-right-color:#999;border-right-color:rgba(0,0,0,.25);border-left-width:0}
+        .popover.right>.arrow:after{bottom:-10px;left:1px;content:" ";border-right-color:#fff;border-left-width:0}
+        .popover.bottom>.arrow{top:-11px;left:50%;margin-left:-11px;border-top-width:0;border-bottom-color:#999;border-bottom-color:rgba(0,0,0,.25)}
+        .popover.bottom>.arrow:after{top:1px;margin-left:-10px;content:" ";border-top-width:0;border-bottom-color:#fff}
+        .popover.left>.arrow{top:50%;right:-11px;margin-top:-11px;border-right-width:0;border-left-color:#999;border-left-color:rgba(0,0,0,.25)}
+        .popover.left>.arrow:after{right:1px;bottom:-10px;content:" ";}
+
+        .nobr	{ white-space:nowrap; }
+        #table2 tbody tr td a b{font-size: 1.6rem;}
+        #table2 tbody tr td a i{font-size: 3rem;}
+    @media (max-width:500px){
+
+        #table1 thead tr th:nth-child(1){padding: 15px 5px 15px 15px;}
+        #table1 tbody tr td:nth-child(1){padding: 15px 5px 15px 15px;}
+        #table1 tbody tr td:nth-child(2){padding: 15px 1px;}
+
+        #table2 tbody tr td a b{font-size: 1.2rem;}
+        #table2 tbody tr td a i{font-size: 2rem;}
+        #table2 thead tr th:nth-child(1){padding:15px 5px;}
+        #table2 thead tr th:nth-child(2){padding:15px 5px;}
+        #table2 thead tr th:nth-child(3){padding:15px 10px}
+        #table2 tbody tr td:nth-child(1){padding:15px 5px;}
+        #table2 tbody tr td:nth-child(3){padding:15px 10px;}
+    }
 </style>
 <h1 id="abm-category-home-title">H&amp;E and Special Staining</h1>
 <nav id="abm-navbar" class="navbar navbar-fixed-top abm-navbar abm-affix abm-category-navbar-relative hidden-xs">
@@ -59,24 +92,24 @@
 			<div class="col-lg-8">
 				<h3 class="abm-perfect-h3">Service Details</h3>
 				<div class="table-title">Core Services</div>
-				<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+				<table id="table1" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
 					<thead>
 						<tr>
-							<th>Service Name</th>
+							<th>Service&nbsp;Name</th>
 							<th>Description</th>
-							<th>CAT. NO.</th>
+							<th>CAT.&nbsp;NO.</th>
 							<th>PRICE</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td><b>H&amp;E Staining</b></td>
+							<td><b>H&amp;E&nbsp;Staining</b></td>
 							<td>Staining of sectioned paraffin embedded tissue or cell pellet using Hematoxylin and Eosin. Add-on services are available for tissue processing, embedding and sectioning prior to H&amp;E staining.<br /><br /> <b>Deliverables</b>: Cover-slipped H&amp;E stained slide.</td>
 							<td>HC013</td>
 							<td>$<span class="customServicePriceGeoIP">5.00</span>/slide</td>
 						</tr>
 						<tr>
-							<td><b>Special Staining</b></td>
+							<td><b>Special&nbsp;Staining</b></td>
 							<td>Staining of sectioned paraffin embedded tissue or cell pellet using special dyes. Click <a title="&lt;p align='left'&gt;&lt;b&gt;abm offers the following special dyes&lt;/b&gt;:&lt;br&gt;&lt;br&gt;• Acid Fast Bacilli (AFB)&lt;br&gt;• Alcian Blue&lt;br&gt;• Congo Red&lt;br&gt;• Gram&lt;br&gt;• Nissl&lt;br&gt;• Oil Red O&lt;br&gt;• Periodic Acid Schiff (PAS)&lt;br&gt;• Toluidine Blue&lt;/p&gt;" data-toggle="popover" data-html="true" data-placement="top">here</a> for a list of special dyes we offer.<br /><br /> <b>Deliverables</b>: Cover-slipped special stained slide.</td>
 							<td>HC014</td>
 							<td>$<span class="customServicePriceGeoIP">15.00</span>/slide</td>
@@ -85,17 +118,17 @@
 				</table>
 				<div class="table-title">Add-On Services*</div>
 				Have the tissue, but can’t embed it or cut it? Don’t worry, send us the tissue sample/block, and we can do the embedding and/or cutting for you!
-				<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+				<table id="table2" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
 					<thead>
 						<tr>
-							<th>Add-On Services*</th>
-							<th>CAT. NO.</th>
+							<th>Add&#8209;On&nbsp;Services*</th>
+							<th>CAT.&nbsp;NO.</th>
 							<th>PRICE</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td><a class="collapsed" href="#collapseOne" data-toggle="collapse" data-parent="#accordion"> <b class="customfaq black-link" style="font-weight: 500; font-size: 1.6rem;">Tissue Processing<sup>#</sup></b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em; font-size: 3rem;"></i> </a></td>
+                            <td><a class="collapsed" href="#collapseOne" data-toggle="collapse" data-parent="#accordion"><span class="nobr"><b class="customfaq black-link" style="font-weight: 500;">Tissue Processing<sup>#</sup></b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em;"></i></span></a></td>
 							<td>HC004</td>
 							<td>$<span class="customServicePriceGeoIP">5.00</span>/tissue</td>
 						</tr>
@@ -107,7 +140,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td><a class="collapsed" href="#collapseTwo" data-toggle="collapse" data-parent="#accordion"> <b class="customfaq black-link" style="font-weight: 500; font-size: 1.6rem;">Paraffin Embedding<sup>#</sup></b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em; font-size: 3rem;"></i> </a></td>
+                            <td><a class="collapsed" href="#collapseTwo" data-toggle="collapse" data-parent="#accordion"><span class="nobr"><b class="customfaq black-link" style="font-weight: 500;">Paraffin Embedding<sup>#</sup></b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em;"></i></span></a></td>
 							<td>HC005</td>
 							<td>$<span class="customServicePriceGeoIP">4.00</span>/tissue</td>
 						</tr>
@@ -119,7 +152,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td><a class="collapsed" href="#collapseThree" data-toggle="collapse" data-parent="#accordion"> <b class="customfaq black-link" style="font-weight: 500; font-size: 1.6rem;">Cell Pellet Processing and Embedding</b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em; font-size: 3rem;"></i> </a></td>
+							<td><a class="collapsed" href="#collapseThree" data-toggle="collapse" data-parent="#accordion"> <b class="customfaq black-link" style="font-weight: 500;">Cell Pellet Processing and Embedding</b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em;"></i> </a></td>
 							<td>HC009</td>
 							<td>$<span class="customServicePriceGeoIP">8.00</span>/block</td>
 						</tr>
@@ -131,7 +164,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td><a class="collapsed" href="#collapseFour" data-toggle="collapse" data-parent="#accordion"> <b class="customfaq black-link" style="font-weight: 500; font-size: 1.6rem;">Paraffin Sectioning</b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em; font-size: 3rem;"></i> </a></td>
+                            <td><a class="collapsed" href="#collapseFour" data-toggle="collapse" data-parent="#accordion"><span class="nobr"><b class="customfaq black-link" style="font-weight: 500;">Paraffin Sectioning</b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em;"></i></span></a></td>
 							<td>HC006</td>
 							<td>$<span class="customServicePriceGeoIP">4.00</span>/Slide</td>
 						</tr>
@@ -143,7 +176,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td><a class="collapsed" href="#collapseFive" data-toggle="collapse" data-parent="#accordion"> <b class="customfaq black-link" style="font-weight: 500; font-size: 1.6rem;">Serial Sectioning</b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em; font-size: 3rem;"></i> </a></td>
+                            <td><a class="collapsed" href="#collapseFive" data-toggle="collapse" data-parent="#accordion"><span class="nobr"><b class="customfaq black-link" style="font-weight: 500;">Serial Sectioning</b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em;"></i></span></a></td>
 							<td>HC007</td>
 							<td>Inquire - starting at $<span class="customServicePriceGeoIP">6.00</span>/slide</td>
 						</tr>
@@ -155,7 +188,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td><a class="collapsed" href="#collapseSix" data-toggle="collapse" data-parent="#accordion"> <b class="customfaq black-link" style="font-weight: 500; font-size: 1.6rem;">Step Sectioning</b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em; font-size: 3rem;"></i> </a></td>
+                            <td><a class="collapsed" href="#collapseSix" data-toggle="collapse" data-parent="#accordion"><span class="nobr"><b class="customfaq black-link" style="font-weight: 500;">Step Sectioning</b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em;"></i></span></a></td>
 							<td>HC008</td>
 							<td>Inquire - starting at $<span class="customServicePriceGeoIP">6.00</span>/slide</td>
 						</tr>
@@ -167,17 +200,17 @@
 							</td>
 						</tr>
 						<tr>
-							<td rowspan="3"><a class="collapsed" href="#collapseSeven" data-toggle="collapse" data-parent="#accordion"> <b class="customfaq black-link" style="font-weight: 500; font-size: 1.6rem;">Digital Scan</b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em; font-size: 3rem;"></i> </a></td>
+                            <td rowspan="3"><a class="collapsed" href="#collapseSeven" data-toggle="collapse" data-parent="#accordion"><span class="nobr"><b class="customfaq black-link" style="font-weight: 500;">Digital Scan</b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em;"></i></span></a></td>
 							<td>HC016</td>
 							<td>Inquire</td>
 						</tr>
 						<tr>
-							<td>HC017</td>
-							<td>Inquire</td>
+							<td style="padding:15px">HC017</td>
+							<td style="padding:15px 10px;">Inquire</td>
 						</tr>
 						<tr>
-							<td>HC018</td>
-							<td>Inquire</td>
+							<td style="padding:15px">HC018</td>
+							<td style="padding:15px 10px;">Inquire</td>
 						</tr>
 						<tr>
 							<td style="padding: 0; text-align: left; color: black;" colspan="3">
@@ -187,7 +220,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td><a class="collapsed" href="#collapseEight" data-toggle="collapse" data-parent="#accordion"> <b class="customfaq black-link" style="font-weight: 500; font-size: 1.6rem;">Image Analysis</b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em; font-size: 3rem;"></i> </a></td>
+                            <td><a class="collapsed" href="#collapseEight" data-toggle="collapse" data-parent="#accordion"><span class="nobr"><b class="customfaq black-link" style="font-weight: 500;">Image Analysis</b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em;"></i></span></a></td>
 							<td>HC011</td>
 							<td>Inquire</td>
 						</tr>
@@ -199,7 +232,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td><a class="collapsed" href="#collapseNine" data-toggle="collapse" data-parent="#accordion"> <b class="customfaq black-link" style="font-weight: 500; font-size: 1.6rem;">Pathological Evaluation</b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em; font-size: 3rem;"></i> </a></td>
+                            <td><a class="collapsed" href="#collapseNine" data-toggle="collapse" data-parent="#accordion"><span class="nobr"><b class="customfaq black-link" style="font-weight: 500;">Pathological Evaluation</b> <i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em;"></i></span></a></td>
 							<td>HC012</td>
 							<td>Inquire</td>
 						</tr>
@@ -224,11 +257,11 @@
 		<div class="col-lg-8">
 			<h3 class="abm-perfect-h3">Additional Info</h3>
 			<b class="subtitle">Sample Submission Guidelines and Shipping Instructions</b><br /> Please fill out our <a class="orange-link" href="/pub/media/catalog/customservice/h-e-and-special-staining/Histology-Services-Request-Form.xlsx">Histology Service Request Form</a>, and email it to <a class="orange-link" href="mailto:quotes@abmgood.com">quotes@abmgood.com</a> to initiate an inquiry. Before shipping, please fill out our <a class="orange-link" href="/pub/media/catalog/customservice/h-e-and-special-staining/Histology-Services-Sample-Submission-Form.xlsx">Histology Services Sample Submission Form</a> with your order number and follow the shipping instructions for your samples.
-			<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table2">
+			<table id="table3" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table2">
 				<thead>
 					<tr>
-						<th>Specimen type</th>
-						<th style="text-align: left;">Shipping instructions</th>
+						<th>Specimen&nbsp;type</th>
+						<th style="text-align: left;">Shipping&nbsp;instructions</th>
 					</tr>
 				</thead>
 				<tbody>
