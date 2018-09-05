@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+function init(){
+    var x = document.getElementsByTagName("tr");
+    for(var i = 0; i < x.length; i++){
+    	x[i].style.display = "none";
+    }
+    
+}
+function showaav1() {
+init()
+	var x = document.getElementsByTagName("tr");
+    for(var i = 0; i < x.length; i++){
+    	if(x[i].getAttribute("data-aav")=="aav1"){
+    		x[i].style.display = "block";}
+    }
+
+}
+function showaav2() {
+init()
+	var x = document.getElementsByTagName("tr");
+    for(var i = 0; i < x.length; i++){
+    	if(x[i].getAttribute("data-aav")=="aav2"){
+    		x[i].style.display = "block";}
+    }
+
+}
+function showaav3() {
+init()
+	var x = document.getElementsByTagName("tr");
+    for(var i = 0; i < x.length; i++){
+    	if(x[i].getAttribute("data-aav")=="aav3"){
+    		x[i].style.display = "block";}
+    }
+
+}
+</script>
+
+<body onload="init()">
+<button type="button" onclick="showaav1()">AAV1</button>
+<button type="button" onclick="showaav2()">AAV2</button>
+<button type="button" onclick="showaav3()">AAV3</button>
+
+
+<table>
+					
+  <tbody>
+    <tr data-aav="aav1" data-number="9">
+      <td>Custom AAV without DNA amplification (10^9 GC/ml) (AAV1)</td>
+      <td>5 x 200 μl</td>
+      <td>C239</td>
+      <td>$<span class="customServicePriceGeoIP">400.00</span></td>
+    </tr>
+    <tr data-aav="aav2" data-number="9">
+      <td>Custom AAV without DNA amplification (10^9 GC/ml) (AAV2)</td>
+      <td>5 x 200 μl</td>
+      <td>C240</td>
+      <td>$<span class="customServicePriceGeoIP">400.00</span></td>
+    </tr>
+    <tr data-aav="aav3" data-number="9">
+      <td>Custom AAV without DNA amplification (10^9 GC/ml) (AAV3)</td>
+      <td>5 x 200 μl</td>
+      <td>C290</td>
+      <td>$<span class="customServicePriceGeoIP">400.00</span></td>
+    </tr>
+   
+    <tr data-aav="aav1" data-number="12">
+      <td>Custom AAV without DNA amplification (10^12 GC/ml) (AAV1)</td>
+      <td>2 x 100 μl</td>
+      <td>C247</td>
+      <td>$<span class="customServicePriceGeoIP">950.00</span></td>
+    </tr>
+    <tr data-aav="aav2" data-number="12">
+      <td>Custom AAV without DNA amplification (10^12 GC/ml) (AAV2)</td>
+      <td>2 x 100 μl</td>
+      <td>C248</td>
+      <td>$<span class="customServicePriceGeoIP">950.00</span></td>
+    </tr>
+    <tr data-aav="aav3" data-number="12">
+      <td>Custom AAV without DNA amplification (10^12 GC/ml) (AAV3)</td>
+      <td>2 x 100 μl</td>
+      <td>C292</td>
+      <td>$<span class="customServicePriceGeoIP">950.00</span></td>
+    </tr>
+   
+  </tbody>
+</table>
+
+</body>
+
+</html>
