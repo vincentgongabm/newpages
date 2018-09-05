@@ -2,50 +2,122 @@
 <html>
 
 <script>
-function init(){
+var aav_array = document.getElementsByTagName("tr");
+var num_array = document.getElementsByTagName("tr");
+
+function test_func(){
+  show_result();
+}
+
+function array_intersection(array1, array2){
+    var array2_catno = [];
+    for(var i = 0; i < array2.length; i++){
+      array2_catno.push(array2[i].getElementsByTagName("td")[2].innerHTML);
+    }
+  var final_array = [];
+    for(var i = 0; i < array1.length; i++){
+      if(array2_catno.indexOf(array1[i].getElementsByTagName("td")[2].innerHTML)!= -1){
+          final_array.push(array1[i]);
+        }
+    }
+    return final_array;
+}
+
+function show_result(){
+  var final_array = array_intersection(aav_array, num_array);
+    var final_array_catno = [];
+    for(var i = 0; i < final_array.length; i++){
+      final_array_catno.push(final_array[i].getElementsByTagName("td")[2].innerHTML);
+    }
+  for(var i = 0; i < final_array.length; i++){
+      final_array[i].style.display = "block";
+    }
     var x = document.getElementsByTagName("tr");
     for(var i = 0; i < x.length; i++){
-    	x[i].style.display = "none";
+      if(final_array_catno.indexOf(x[i].getElementsByTagName("td")[2].innerHTML) == -1){
+          x[i].style.display = "none";
+        }
+    }
+}
+
+
+function init(){
+  var aav_array = document.getElementsByTagName("tr");
+  var num_array = document.getElementsByTagName("tr");
+    var x = document.getElementsByTagName("tr");
+    for(var i = 0; i < x.length; i++){
+      x[i].style.display = "none";
     }
     
 }
-function showaav1() {
-init()
-	var x = document.getElementsByTagName("tr");
-    for(var i = 0; i < x.length; i++){
-    	if(x[i].getAttribute("data-aav")=="aav1"){
-    		x[i].style.display = "block";}
-    }
 
+function showaav1() {
+  aav_array = []
+    var x = document.getElementsByTagName("tr");
+  for(var i = 0; i < x.length; i++){
+        if(x[i].getAttribute("data-aav")=="aav1"){
+          aav_array.push(x[i]); 
+        }
+    }
+    show_result();
 }
 function showaav2() {
-init()
-	var x = document.getElementsByTagName("tr");
-    for(var i = 0; i < x.length; i++){
-    	if(x[i].getAttribute("data-aav")=="aav2"){
-    		x[i].style.display = "block";}
+  aav_array = []
+    var x = document.getElementsByTagName("tr");
+  for(var i = 0; i < x.length; i++){
+        if(x[i].getAttribute("data-aav")=="aav2"){
+          aav_array.push(x[i]); 
+        }
     }
-
+    show_result();
 }
 function showaav3() {
-init()
-	var x = document.getElementsByTagName("tr");
-    for(var i = 0; i < x.length; i++){
-    	if(x[i].getAttribute("data-aav")=="aav3"){
-    		x[i].style.display = "block";}
+  aav_array = []
+    var x = document.getElementsByTagName("tr");
+  for(var i = 0; i < x.length; i++){
+        if(x[i].getAttribute("data-aav")=="aav3"){
+          aav_array.push(x[i]); 
+        }
     }
-
+    show_result();
+}
+function show9() {
+  num_array = []
+    var x = document.getElementsByTagName("tr");
+  for(var i = 0; i < x.length; i++){
+        if(x[i].getAttribute("data-number")=="9"){
+          num_array.push(x[i]); 
+        }
+    }
+    show_result();
+}
+function show12() {
+  num_array = []
+    var x = document.getElementsByTagName("tr");
+  for(var i = 0; i < x.length; i++){
+        if(x[i].getAttribute("data-number")=="12"){
+          num_array.push(x[i]); 
+        }
+    }
+    show_result();
 }
 </script>
-
+<p id="demo">123</p>
+<button type="button" onclick="test_func()">test</button>
+<div></div>
 <body onload="init()">
 <button type="button" onclick="showaav1()">AAV1</button>
 <button type="button" onclick="showaav2()">AAV2</button>
 <button type="button" onclick="showaav3()">AAV3</button>
+<div></div>
+<button type="button" onclick="show9()">10<sup>9</sup></button>
+<button type="button" onclick="show12()">10<sup>12</sup></button>
+<div></div>
+<button type="button" onclick="init()">reset</button>
 
 
 <table>
-					
+          
   <tbody>
     <tr data-aav="aav1" data-number="9">
       <td>Custom AAV without DNA amplification (10^9 GC/ml) (AAV1)</td>
