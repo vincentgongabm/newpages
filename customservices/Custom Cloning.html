@@ -1,22 +1,43 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript" xml="space"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript" xml="space"></script>
-<script type="text/javascript" xml="space">// <![CDATA[
-	// 
-	// 
-	// 
-			$(document).ready(function(){
-			$('[data-toggle="popover"]').popover();   
-			});
-		
-	//
-	//
-	// 
-	// ]]>
-</script>
 <style xml="space">
-	<!--
-		.popover{position:absolute;top:0;left:0;z-index:1060;display:none;max-width:276px;padding:1px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-style:normal;font-weight:400;line-height:1.42857143;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2);line-break:auto}.popover.top{margin-top:-10px}.popover.right{margin-left:10px}.popover.bottom{margin-top:10px}.popover.left{margin-left:-10px}.popover-title{padding:8px 14px;margin:0;font-size:14px;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;border-radius:5px 5px 0 0}.popover-content{padding:9px 14px}.popover>.arrow,.popover>.arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid}.popover>.arrow{border-width:11px}.popover>.arrow:after{content:"";border-width:10px}.popover.top>.arrow{bottom:-11px;left:50%;margin-left:-11px;border-top-color:#999;border-top-color:rgba(0,0,0,.25);border-bottom-width:0}.popover.top>.arrow:after{bottom:1px;margin-left:-10px;content:" ";border-top-color:#fff;border-bottom-width:0}.popover.right>.arrow{top:50%;left:-11px;margin-top:-11px;border-right-color:#999;border-right-color:rgba(0,0,0,.25);border-left-width:0}.popover.right>.arrow:after{bottom:-10px;left:1px;content:" ";border-right-color:#fff;border-left-width:0}.popover.bottom>.arrow{top:-11px;left:50%;margin-left:-11px;border-top-width:0;border-bottom-color:#999;border-bottom-color:rgba(0,0,0,.25)}.popover.bottom>.arrow:after{top:1px;margin-left:-10px;content:" ";border-top-width:0;border-bottom-color:#fff}.popover.left>.arrow{top:50%;right:-11px;margin-top:-11px;border-right-width:0;border-left-color:#999;border-left-color:rgba(0,0,0,.25)}.popover.left>.arrow:after{right:1px;bottom:-10px;content:" ";
-		-->
+	.tooltip-category {
+        position: relative;
+        display: inline-block;
+        color:#ef6331 ;
+    }
+
+    .tooltip-category .tooltiptext-category {
+        visibility: hidden;
+        width: 330px;
+        background-color: #f7f7f7;
+        color: black;
+        text-align: justify;
+        border-radius: 6px;
+        padding: 5px 10px;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -60px;
+        border: 1px solid rgba(0,0,0,.5);
+    }
+
+    .tooltip-category .tooltiptext-category::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 20%;
+        margin-left: -5px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: #444 transparent transparent transparent;
+    }
+
+    .tooltip-category:hover .tooltiptext-category {
+        visibility: visible;
+    }
+    .tooltip-category:hover {
+        color: #ff734d;
+    }
 </style>
 <h1 id="abm-category-home-title">Custom Cloning Service</h1>
 <nav id="abm-navbar" class="navbar navbar-fixed-top abm-navbar abm-affix abm-category-navbar-relative hidden-xs">
@@ -42,7 +63,7 @@
 				<li>gene synthesis</li>
 				<li>codon optimization (upon request)</li>
 				<li>mutagenesis</li>
-				<li>expression vector customization: <a title="&lt;p align='left'&gt;&lt;b&gt;Examples of tissue-specific promoters:&lt;/b&gt;&lt;br&gt;&lt;br&gt;hSyn&lt;br&gt;TBG&lt;br&gt;GFAP promoter&lt;br&gt;CD14 promoter&lt;br&gt;B29 promoter&lt;br&gt;Endoglin promoter&lt;br&gt;Desmin promoter&lt;br&gt;CamKIIα&lt;br&gt;Albumin&lt;/p&gt;" data-toggle="popover" data-html="true" data-placement="top">tissue-specific promoters</a>; fluorescent reporters; tags and lox sites; drug resistance markers</li>
+				<li>expression vector customization: <div class="tooltip-category">tissue-specific promoters<span class="tooltiptext-category"><b style="font-weight: 600;">Examples of tissue-specific promoters:</b><br />hSyn<br />TBG<br />GFAP promoter<br />CD14 promoter<br />B29 promoter<br />Endoglin promoter<br />Desmin promoter<br />CamKIIα<br />Albumin</span></div>; fluorescent reporters; tags and lox sites; drug resistance markers</li>
 				<li>sequence verification of inserts in final vector; vector verification by restriction digest</li>
 			</ul>
 			<p>Our experienced scientists will assemble your clone accurately, rapidly, economically, and ready to use for your experiment.</p>
@@ -56,7 +77,7 @@
 				<ul class="grey-list grey-link">
 					<li><a href="https://www.abmgood.com/marketing/knowledge_base/Adeno_Associated_Virus_Introduction.php" target="_blank">An introduction to AAV</a></li>
 					<li><a href="https://www.abmgood.com/marketing/knowledge_base/CRISPR_Cas9_Introduction_Part1.php" target="_blank">An introduction to CRISPR</a></li>
-					<li><a href="pub/media/catalog/customservice/cell_immortalization_service/Shipping-Frozen-Cells-to-abm.pdf" target="_blank">Shipping Samples with <strong>abm</strong></a></li>
+					<li><a href="/pub/media/catalog/customservice/cell_immortalization_service/Shipping to-from abm.pdf" target="_blank">Shipping Samples with <strong>abm</strong></a></li>
 				</ul>
 			</div>
 		</div>
@@ -386,16 +407,16 @@
 							<li class="col-xs-6 col-sm-6 col-md-6">
 								<div class="banners">
 									<div class="serviceimages" style="text-align: left;">
-										<a href="/contract-research-cro-services/viral-packaging-services/custom-lentivirus"> <img src="/pub/media/catalog/category/imgs/perfect_page/Related-Products-tube.png" /> <br /> </a>
-										<div class="abm-custom-service-image-title"><a class="orange-link" href="/contract-research-cro-services/viral-packaging-services/custom-lentivirus"> Lentivirus Packaging Service </a></div>
+										<a href="/Custom-Lentivirus-Subcloning-Services.html"> <img src="/pub/media/catalog/category/imgs/perfect_page/Related-Products-tube.png" /> <br /> </a>
+										<div class="abm-custom-service-image-title"><a class="black-link" href="/Custom-Lentivirus-Subcloning-Services.html">Lentivirus Packaging Service</a></div>
 									</div>
 								</div>
 							</li>
 							<li class="col-xs-6 col-sm-6 col-md-6">
 								<div class="banners">
 									<div class="serviceimages" style="text-align: left;">
-										<a href="/contract-research-cro-services/viral-packaging-services/custom-aav"> <img src="/pub/media/catalog/category/imgs/perfect_page/Related-Products-tube.png" /> <br /> </a>
-										<div class="abm-custom-service-image-title"><a class="orange-link" href="/contract-research-cro-services/viral-packaging-services/custom-aav"> AAV Packaging Service </a></div>
+										<a href="/Custom-Adeno-Associated-Virus-AAV-Services.html"> <img src="/pub/media/catalog/category/imgs/perfect_page/Related-Products-tube.png" /> <br /> </a>
+										<div class="abm-custom-service-image-title"><a class="black-link" href="/Custom-Adeno-Associated-Virus-AAV-Services.html">AAV Packaging Service</a></div>
 									</div>
 								</div>
 							</li>
@@ -410,16 +431,16 @@
 							<li class="col-xs-6 col-sm-6 col-md-6">
 								<div class="banners">
 									<div class="serviceimages" style="text-align: left;">
-										<a href="/contract-research-cro-services/viral-packaging-services/recombinant-adenovirus"> <img src="/pub/media/catalog/category/imgs/perfect_page/Related-Products-tube.png" /> <br /> </a>
-										<div class="abm-custom-service-image-title"><a class="orange-link" href="/contract-research-cro-services/viral-packaging-services/recombinant-adenovirus"> Adenovirus Packaging Service </a></div>
+										<a href="/Custom-Recombinant-Adenovirus-Service.html"> <img src="/pub/media/catalog/category/imgs/perfect_page/Related-Products-tube.png" /> <br /> </a>
+										<div class="abm-custom-service-image-title"><a class="black-link" href="/Custom-Recombinant-Adenovirus-Service.html">Adenovirus Packaging Service</a></div>
 									</div>
 								</div>
 							</li>
 							<li class="col-xs-6 col-sm-6 col-md-6">
 								<div class="banners">
 									<div class="serviceimages" style="text-align: left;">
-										<a href="/contract-research-cro-services/viral-packaging-services/recombinant-retrovirus"> <img src="/pub/media/catalog/category/imgs/perfect_page/Related-Products-tube.png" /> <br /> </a>
-										<div class="abm-custom-service-image-title"><a class="orange-link" href="/contract-research-cro-services/viral-packaging-services/recombinant-retrovirus"> Retrovirus Packaging Service </a></div>
+										<a href="/Custom-Retrovirus-Services.html"> <img src="/pub/media/catalog/category/imgs/perfect_page/Related-Products-tube.png" /> <br /> </a>
+										<div class="abm-custom-service-image-title"><a class="black-link" href="/Custom-Retrovirus-Services.html">Retrovirus Packaging Service</a></div>
 									</div>
 								</div>
 							</li>
@@ -439,7 +460,7 @@
 				<ul class="cleanlist">
 					<li><img src="/pub/media/catalog/category/imgs/perfect_page/PDF.png" /> <a class="black-link doclinks" href="/pub/media/catalog/customservice/custom-cloning/Custom-Cloning-Request-Form-v2.pdf">Order Form for Custom Cloning Service</a></li>
 					<li><img src="/pub/media/catalog/category/imgs/perfect_page/PDF.png" /> <a class="black-link doclinks" href="/pub/media/catalog/customservice/custom-cloning/Viral-Vectors-Brochure-Single-Pages.pdf">Viral Vector Brochure</a></li>
-					<li><img src="/pub/media/catalog/category/imgs/perfect_page/PDF.png" /> <a class="black-link doclinks" href="/pub/media/catalog/customservice/custom-cloning/Shipping-DNA-samples-to-abm.pdf">Shipping Samples with <strong>abm</strong></a></li>
+					<li><img src="/pub/media/catalog/category/imgs/perfect_page/PDF.png" /> <a class="black-link doclinks" href="/pub/media/catalog/customservice/cell_immortalization_service/Shipping to-from abm.pdf">Shipping Samples with <strong>abm</strong></a></li>
 				</ul>
 			</div>
 		</div>

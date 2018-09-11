@@ -1,38 +1,43 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript" xml="space"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript" xml="space"></script>
-<script type="text/javascript" xml="space">// <![CDATA[
-	// 
-	// 
-	// 
-			$(document).ready(function(){
-			$('[data-toggle="popover"]').popover();   
-			});
-		
-	//
-	//
-	// 
-	// ]]>
-</script>
 <style xml="space">
+	.tooltip-category {
+        position: relative;
+        display: inline-block;
+        color:#ef6331 ;
+    }
 
-		.popover{position:absolute;top:0;left:0;z-index:1060;display:none;max-width:276px;padding:1px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-style:normal;font-weight:400;line-height:1.42857143;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2);line-break:auto}
-        .popover.top{margin-top:-10px}
-        .popover.right{margin-left:10px}
-        .popover.bottom{margin-top:10px}
-        .popover.left{margin-left:-10px}
-        .popover-title{padding:8px 14px;margin:0;font-size:14px;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;border-radius:5px 5px 0 0}
-        .popover-content{padding:9px 14px} .popover>.arrow,.popover>.arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid}
-        .popover>.arrow{border-width:11px}
-        .popover>.arrow:after{content:"";border-width:10px}
-        .popover.top>.arrow{bottom:-11px;left:50%;margin-left:-11px;border-top-color:#999;border-top-color:rgba(0,0,0,.25);border-bottom-width:0}
-        .popover.top>.arrow:after{bottom:1px;margin-left:-10px;content:" ";border-top-color:#fff;border-bottom-width:0}
-        .popover.right>.arrow{top:50%;left:-11px;margin-top:-11px;border-right-color:#999;border-right-color:rgba(0,0,0,.25);border-left-width:0}
-        .popover.right>.arrow:after{bottom:-10px;left:1px;content:" ";border-right-color:#fff;border-left-width:0}
-        .popover.bottom>.arrow{top:-11px;left:50%;margin-left:-11px;border-top-width:0;border-bottom-color:#999;border-bottom-color:rgba(0,0,0,.25)}
-        .popover.bottom>.arrow:after{top:1px;margin-left:-10px;content:" ";border-top-width:0;border-bottom-color:#fff}
-        .popover.left>.arrow{top:50%;right:-11px;margin-top:-11px;border-right-width:0;border-left-color:#999;border-left-color:rgba(0,0,0,.25)}
-        .popover.left>.arrow:after{right:1px;bottom:-10px;content:" ";}
+    .tooltip-category .tooltiptext-category {
+        visibility: hidden;
+        width: 280px;
+        background-color: #f7f7f7;
+        color: black;
+        text-align: justify;
+        border-radius: 6px;
+        padding: 5px 10px;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -60px;
+        border: 1px solid rgba(0,0,0,.5);
+    }
 
+    .tooltip-category .tooltiptext-category::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 20%;
+        margin-left: -5px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: #444 transparent transparent transparent;
+    }
+
+    .tooltip-category:hover .tooltiptext-category {
+        visibility: visible;
+    }
+    .tooltip-category:hover {
+        color: #ff734d;
+    }
         .nobr	{ white-space:nowrap; }
         #table2 tbody tr td a b{font-size: 1.6rem;}
         #table2 tbody tr td a i{font-size: 3rem;}
@@ -113,7 +118,7 @@
 						</tr>
 						<tr>
 							<td><b>Special&nbsp;Staining</b></td>
-							<td>Staining of sectioned paraffin embedded tissue or cell pellet using special dyes. Click <a title="&lt;p align='left'&gt;&lt;b&gt;abm offers the following special dyes&lt;/b&gt;:&lt;br&gt;&lt;br&gt;• Acid Fast Bacilli (AFB)&lt;br&gt;• Alcian Blue&lt;br&gt;• Congo Red&lt;br&gt;• Gram&lt;br&gt;• Nissl&lt;br&gt;• Oil Red O&lt;br&gt;• Periodic Acid Schiff (PAS)&lt;br&gt;• Toluidine Blue&lt;/p&gt;" data-toggle="popover" data-html="true" data-placement="top">here</a> for a list of special dyes we offer.<br /><br /> <b>Deliverables</b>: Cover-slipped special stained slide.</td>
+							<td>Staining of sectioned paraffin embedded tissue or cell pellet using special dyes. See <div class="tooltip-category">here <span class="tooltiptext-category"><b style="font-weight: 600;">abm offers the following special dyes</b>:<br /><br />• Acid Fast Bacilli (AFB)<br />• Alcian Blue<br />• Congo Red<br />• Gram<br />• Nissl<br />• Oil Red O<br />• Periodic Acid Schiff (PAS)<br />• Toluidine Blue<br /><br /></span></div> for a list of special dyes we offer.<br /><br /> <b>Deliverables</b>: Cover-slipped special stained slide.</td>
 							<td>HC014</td>
 							<td>$<span class="customServicePriceGeoIP">15.00</span>/slide</td>
 						</tr>
@@ -301,16 +306,16 @@
 							<li class="col-xs-6 col-sm-6 col-md-6">
 								<div class="banners">
 									<div class="serviceimages" style="text-align: left;">
-										<a href="/contract-research-cro-services/histology-services/ihc-staining"> <img src="/pub/media/catalog/category/imgs/perfect_page/Related-Products-tube.png" /> <br /> </a>
-										<div class="abm-custom-service-image-title"><a class="orange-link" href="/contract-research-cro-services/histology-services/ihc-staining"> IHC Staining Service </a></div>
+										<a href="/IHC-Staining.html"> <img src="/pub/media/catalog/category/imgs/perfect_page/Related-Products-tube.png" /> <br /> </a>
+										<div class="abm-custom-service-image-title"><a class="black-link" href="/IHC-Staining.html">IHC Staining Service</a></div>
 									</div>
 								</div>
 							</li>
 							<li class="col-xs-6 col-sm-6 col-md-6">
 								<div class="banners">
 									<div class="serviceimages" style="text-align: left;">
-										<a href="/contract-research-cro-services/histology-services/ihc-optimization"> <img src="/pub/media/catalog/category/imgs/perfect_page/Related-Products-tube.png" /> <br /> </a>
-										<div class="abm-custom-service-image-title"><a class="orange-link" href="/contract-research-cro-services/histology-services/ihc-optimization"> IHC Optimization Service </a></div>
+										<a href="/IHC-Optimization-Service.html"> <img src="/pub/media/catalog/category/imgs/perfect_page/Related-Products-tube.png" /> <br /> </a>
+										<div class="abm-custom-service-image-title"><a class="black-link" href="/IHC-Optimization-Service.html">IHC Optimization Service</a></div>
 									</div>
 								</div>
 							</li>
@@ -325,8 +330,8 @@
 							<li class="col-xs-6 col-sm-6 col-md-6">
 								<div class="banners">
 									<div class="serviceimages" style="text-align: left;">
-										<a href="/contract-research-cro-services/histology-services/custom-tissue-microarray"> <img src="/pub/media/catalog/category/imgs/perfect_page/Related-Products-tube.png" /> <br /> </a>
-										<div class="abm-custom-service-image-title"><a class="orange-link" href="/contract-research-cro-services/histology-services/custom-tissue-microarray"> Custom Tissue Microarray Service </a></div>
+										<a href="/Custom-Tissue-Microarray-Construction.html"> <img src="/pub/media/catalog/category/imgs/perfect_page/Related-Products-tube.png" /> <br /> </a>
+										<div class="abm-custom-service-image-title"><a class="black-link" href="/Custom-Tissue-Microarray-Construction.html">Custom Tissue Microarray Service</a></div>
 									</div>
 								</div>
 							</li>
@@ -334,7 +339,7 @@
 								<div class="banners">
 									<div class="serviceimages" style="text-align: left;">
 										<a href="/catalog/category/view/s/sensistaintm-ihc-antibodies-for-pathology/id/110/"> <img src="/pub/media/catalog/category/imgs/perfect_page/Related-Products-tube.png" /> <br /> </a>
-										<div class="abm-custom-service-image-title"><a class="orange-link" href="/catalog/category/view/s/sensistaintm-ihc-antibodies-for-pathology/id/110/"> SensiStain Antibodies </a></div>
+										<div class="abm-custom-service-image-title"><a class="black-link" href="/catalog/category/view/s/sensistaintm-ihc-antibodies-for-pathology/id/110/">SensiStain Antibodies</a></div>
 									</div>
 								</div>
 							</li>
