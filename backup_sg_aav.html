@@ -330,6 +330,477 @@ fieldset[disabled] a.btn {
 			<div class="col-lg-8">
 				<h3 class="abm-perfect-h3">Service Details</h3>
 
+				<a id = "yescollapse" class="collapsed" href="#collapsetable" data-toggle="collapse" data-parent="#accordion"><b class="subtitle">Expand for Details</b><i class="fa fa-angle-down OrderAngleDown" style="padding-left: 0.4em; font-size: 3rem;"></i></a><br id="linebreak">
+				<div id="collapsetable" class="panel-collapse collapse" style="border-left: none; margin-left: 20px;">
+
+
+					<div class="table-title">Custom AAV Virus CRISPR Services:</div>
+					<div>Which Cas9 system are you interested in?</div>
+					<div class="btn-group g1">
+						<button onclick="select('p');show_result('aav0');" type="button" class="btn-selector btn" id="p">spCas9</button>
+						<button onclick="select('a');show_result('aav0');" type="button" class="btn-selector btn" id="a">saCas9</button>
+					</div>
+					<br>
+					<br>
+					<div>How many sgRNAs are you interested in receiving?</div>
+					<div class="btn-group g2">
+						<button onclick="select('1');show_result('aav0');" type="button" class="btn-selector btn" id="1">1</button>
+						<button onclick="select('2');show_result('aav0');" type="button" class="btn-selector btn" id="2">2</button>
+						<button onclick="select('3');show_result('aav0');" type="button" class="btn-selector btn" id="3">3</button>
+					</div>
+					<br>
+					<br>
+					<div>What serotype would you like to use?</div>
+					<div id="button-group-small"></div>
+					<br>
+					<br>
+					<button onclick="btn_reset();init();" type="button" class="btn-selector btn" id="reset">Reset Selector</button>
+
+
+					<div class="table-title" id="title1">Cloning services</div>
+					<div>
+						<table id="table1" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+							<thead>
+								<tr>
+									<th>Service&nbsp;Name</th>
+									<th>Vector</th>
+									<th>Quantity</th>
+									<th>Cat.&nbsp;No.</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Custom CRISPR sgRNA AAV vector (for spCas9) – single target</td>
+									<td><a href="www.abmgood.com/vectors/vectorDisplay.php?vec=pAAV-U6-sgRNAsp-GFP&page=map">pAAV-U6-sgRNAsp-GFP</a></td>
+									<td>1.0&nbsp;ug</td>
+									<td>C303</td>
+									<td>$<span class="customServicePriceGeoIP">145.00</span></td>
+								</tr>
+								<tr>
+									<td>Custom CRISPR sgRNA AAV vector (for spCas9) – set of three targets</td>
+									<td><a href="www.abmgood.com/vectors/vectorDisplay.php?vec=pAAV-U6-sgRNAsp-GFP&page=map">pAAV-U6-sgRNAsp-GFP</a></td>
+									<td>3&nbsp;x&nbsp;1.0&nbsp;ug</td>
+									<td>C302</td>
+									<td>$<span class="customServicePriceGeoIP">345.00</span></td>
+								</tr>
+								<tr>
+									<td>Custom CRISPR sgRNA AAV vector (for saCas9) – single target</td>
+									<td><a href="www.abmgood.com/vectors/vectorDisplay.php?vec=pAAV-U6-sgRNAsa-GFP&page=map">pAAV-U6-sgRNAsa-GFP</a></td>
+									<td>1.0&nbsp;ug</td>
+									<td>C305</td>
+									<td>$<span class="customServicePriceGeoIP">145.00</span></td>
+								</tr>
+								<tr>
+									<td>Custom CRISPR sgRNA AAV vector (for saCas9) – set of three targets</td>
+									<td><a href="www.abmgood.com/vectors/vectorDisplay.php?vec=pAAV-U6-sgRNAsa-GFP&page=map">pAAV-U6-sgRNAsa-GFP</a></td>
+									<td>3&nbsp;x&nbsp;1.0&nbsp;ug</td>
+									<td>C304</td>
+									<td>$<span class="customServicePriceGeoIP">345.00</span></td>
+								</tr>
+								<tr>
+									<td>Custom CRISPR Cas9 All-in-One AAV vector (for saCas9) – single target</td>
+									<td><a href="www.abmgood.com/vectors/vectorDisplay.php?vec=pAAV-PGK-saCas9-U6-sgRNAsa&page=map">pAAV-PGK-saCas9-U6-sgRNAsa</a></td>
+									<td>1.0&nbsp;ug</td>
+									<td>C307</td>
+									<td>$<span class="customServicePriceGeoIP">195.00</span></td>
+								</tr>
+								<tr>
+									<td>Custom CRISPR Cas9 All-in-One AAV vector (for saCas9) – set of three targets</td>
+									<td><a href="www.abmgood.com/vectors/vectorDisplay.php?vec=pAAV-PGK-saCas9-U6-sgRNAsa&page=map">pAAV-PGK-saCas9-U6-sgRNAsa</a></td>
+									<td>3&nbsp;x&nbsp;1.0&nbsp;ug</td>
+									<td>C306</td>
+									<td>$<span class="customServicePriceGeoIP">465.00</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<div class="table-title" id="title2">Custom CRISPR AAV Packaging Services (Single Target)</div>
+						<table id="table2" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+							<thead>
+								<tr>
+									<th>Service&nbsp;Name</th>
+									<th>Size</th>
+									<th>Titer</th>
+									<th>CAT.&nbsp;NO.</th>
+									<th>PRICE</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr data-aav="aav1">
+									<td>Custom CRISPR AAV Single sgRNA Packaging (10^9 GC/ml) (AAV1)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C370</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav2">
+									<td>Custom CRISPR AAV Single sgRNA Packaging (10^9 GC/ml) (AAV2)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C371</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav3">
+									<td>Custom CRISPR AAV Single sgRNA Packaging (10^9 GC/ml) (AAV3)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C372</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav4">
+									<td>Custom CRISPR AAV Single sgRNA Packaging (10^9 GC/ml) (AAV4)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C373</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav5">
+									<td>Custom CRISPR AAV Single sgRNA Packaging (10^9 GC/ml) (AAV5)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C374</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav6">
+									<td>Custom CRISPR AAV Single sgRNA Packaging (10^9 GC/ml) (AAV6)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C375</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav7">
+									<td>Custom CRISPR AAV Single sgRNA Packaging (10^9 GC/ml) (AAV7)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C376</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav8">
+									<td>Custom CRISPR AAV Single sgRNA Packaging (10^9 GC/ml) (AAV8)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C377</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav9">
+									<td>Custom CRISPR AAV Single sgRNA Packaging (10^9 GC/ml) (AAV9)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C378</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav10">
+									<td>Custom CRISPR AAV Single sgRNA Packaging (10^9 GC/ml) (AAV rh10)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C379</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav11">
+									<td>Custom CRISPR AAV Single sgRNA Packaging (10^9 GC/ml) (AAV hu11)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C380</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aavdj">
+									<td>Custom CRISPR AAV Single sgRNA Packaging (10^9 GC/ml) (AAVDJ)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C480</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aavdj-8">
+									<td>Custom CRISPR AAV Single sgRNA Packaging (10^9 GC/ml) (AAVDJ-8)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C481</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<div class="table-title" id="title3">Custom CRISPR AAV Packaging Services (Set of 3 Targets, Individually Packaged)</div>
+						<table id = "table3" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+							<thead>
+								<tr>
+									<th>Service&nbsp;Name</th>
+									<th>Size</th>
+									<th>Titer</th>
+									<th>CAT.&nbsp;NO.</th>
+									<th>PRICE</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr data-aav="aav1">
+									<td>Custom CRISPR AAV Set of 3 sgRNAs Packaging (10^9 GC/ml) (AAV1)</td>
+									<td>3&nbsp;x&nbsp;(5&nbsp;x&nbsp;200&nbsp;ul)</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C381</td>
+									<td>$<span class="customServicePriceGeoIP">1960.00</span></td>
+								</tr>
+								<tr data-aav="aav2">
+									<td>Custom CRISPR AAV Set of 3 sgRNAs Packaging (10^9 GC/ml) (AAV2)</td>
+									<td>3&nbsp;x&nbsp;(5&nbsp;x&nbsp;200&nbsp;ul)</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C382</td>
+									<td>$<span class="customServicePriceGeoIP">1960.00</span></td>
+								</tr>
+								<tr data-aav="aav3">
+									<td>Custom CRISPR AAV Set of 3 sgRNAs Packaging (10^9 GC/ml) (AAV3)</td>
+									<td>3&nbsp;x&nbsp;(5&nbsp;x&nbsp;200&nbsp;ul)</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C383</td>
+									<td>$<span class="customServicePriceGeoIP">1960.00</span></td>
+								</tr>
+								<tr data-aav="aav4">
+									<td>Custom CRISPR AAV Set of 3 sgRNAs Packaging (10^9 GC/ml) (AAV4)</td>
+									<td>3&nbsp;x&nbsp;(5&nbsp;x&nbsp;200&nbsp;ul)</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C384</td>
+									<td>$<span class="customServicePriceGeoIP">1960.00</span></td>
+								</tr>
+								<tr data-aav="aav5">
+									<td>Custom CRISPR AAV Set of 3 sgRNAs Packaging (10^9 GC/ml) (AAV5)</td>
+									<td>3&nbsp;x&nbsp;(5&nbsp;x&nbsp;200&nbsp;ul)</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C385</td>
+									<td>$<span class="customServicePriceGeoIP">1960.00</span></td>
+								</tr>
+								<tr data-aav="aav6">
+									<td>Custom CRISPR AAV Set of 3 sgRNAs Packaging (10^9 GC/ml) (AAV6)</td>
+									<td>3&nbsp;x&nbsp;(5&nbsp;x&nbsp;200&nbsp;ul)</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C386</td>
+									<td>$<span class="customServicePriceGeoIP">1960.00</span></td>
+								</tr>
+								<tr data-aav="aav7">
+									<td>Custom CRISPR AAV Set of 3 sgRNAs Packaging (10^9 GC/ml) (AAV7)</td>
+									<td>3&nbsp;x&nbsp;(5&nbsp;x&nbsp;200&nbsp;ul)</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C387</td>
+									<td>$<span class="customServicePriceGeoIP">1960.00</span></td>
+								</tr>
+								<tr data-aav="aav8">
+									<td>Custom CRISPR AAV Set of 3 sgRNAs Packaging (10^9 GC/ml) (AAV8)</td>
+									<td>3&nbsp;x&nbsp;(5&nbsp;x&nbsp;200&nbsp;ul)</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C388</td>
+									<td>$<span class="customServicePriceGeoIP">1960.00</span></td>
+								</tr>
+								<tr data-aav="aav9">
+									<td>Custom CRISPR AAV Set of 3 sgRNAs Packaging (10^9 GC/ml) (AAV9)</td>
+									<td>3&nbsp;x&nbsp;(5&nbsp;x&nbsp;200&nbsp;ul)</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C389</td>
+									<td>$<span class="customServicePriceGeoIP">1960.00</span></td>
+								</tr>
+								<tr data-aav="aav10">
+									<td>Custom CRISPR AAV Set of 3 sgRNAs Packaging (10^9 GC/ml) (AAV rh10)</td>
+									<td>3&nbsp;x&nbsp;(5&nbsp;x&nbsp;200&nbsp;ul)</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C390</td>
+									<td>$<span class="customServicePriceGeoIP">1960.00</span></td>
+								</tr>
+								<tr data-aav="aav11">
+									<td>Custom CRISPR AAV Set of 3 sgRNAs Packaging (10^9 GC/ml) (AAV hu11)</td>
+									<td>3&nbsp;x&nbsp;(5&nbsp;x&nbsp;200&nbsp;ul)</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C391</td>
+									<td>$<span class="customServicePriceGeoIP">1960.00</span></td>
+								</tr>
+								<tr data-aav="aavdj">
+									<td>Custom CRISPR AAV Set of 3 sgRNAs Packaging (10^9 GC/ml) (AAVDJ)</td>
+									<td>3&nbsp;x&nbsp;(5&nbsp;x&nbsp;200&nbsp;ul)</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C482</td>
+									<td>$<span class="customServicePriceGeoIP">1960.00</span></td>
+								</tr>
+								<tr data-aav="aavdj-8">
+									<td>Custom CRISPR AAV Set of 3 sgRNAs Packaging (10^9 GC/ml) (AAVDJ-8)</td>
+									<td>3&nbsp;x&nbsp;(5&nbsp;x&nbsp;200&nbsp;ul)</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C483</td>
+									<td>$<span class="customServicePriceGeoIP">1960.00</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<div class="table-title" id="title4">Custom CRISPR AAV Packaging Services (Set of 3 Targets, Pooled Packaging)</div>
+						<table id="table4" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+							<thead>
+								<tr>
+									<th>Service&nbsp;Name</th>
+									<th>Size</th>
+									<th>Titer</th>
+									<th>CAT.&nbsp;NO.</th>
+									<th>PRICE</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr data-aav="aav1">
+									<td>Custom CRISPR AAV Pooled sgRNA Targets Packaging (10^9 GC/ml) (AAV1)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C392</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav2">
+									<td>Custom CRISPR AAV Pooled sgRNA Targets Packaging (10^9 GC/ml) (AAV2)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C393</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav3">
+									<td>Custom CRISPR AAV Pooled sgRNA Targets Packaging (10^9 GC/ml) (AAV3)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C394</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav4">
+									<td>Custom CRISPR AAV Pooled sgRNA Targets Packaging (10^9 GC/ml) (AAV4)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C395</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav5">
+									<td>Custom CRISPR AAV Pooled sgRNA Targets Packaging (10^9 GC/ml) (AAV5)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C396</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav6">
+									<td>Custom CRISPR AAV Pooled sgRNA Targets Packaging (10^9 GC/ml) (AAV6)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C397</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav7">
+									<td>Custom CRISPR AAV Pooled sgRNA Targets Packaging (10^9 GC/ml) (AAV7)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C398</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav8">
+									<td>Custom CRISPR AAV Pooled sgRNA Targets Packaging (10^9 GC/ml) (AAV8)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C399</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav9">
+									<td>Custom CRISPR AAV Pooled sgRNA Targets Packaging (10^9 GC/ml) (AAV9)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C400</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav10">
+									<td>Custom CRISPR AAV Pooled sgRNA Targets Packaging (10^9 GC/ml) (AAV rh10)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C401</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aav11">
+									<td>Custom CRISPR AAV Pooled sgRNA Targets Packaging (10^9 GC/ml) (AAV hu11)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C402</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aavdj">
+									<td>Custom CRISPR AAV Pooled sgRNA Targets Packaging (10^9 GC/ml) (AAVDJ)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C484</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+								<tr data-aav="aavdj-8">
+									<td>Custom CRISPR AAV Pooled sgRNA Targets Packaging (10^9 GC/ml) (AAVDJ-8)</td>
+									<td>5&nbsp;x&nbsp;200&nbsp;ul</td>
+									<td>10<sup>9</sup>&nbsp;GC/ml</td>
+									<td>C485</td>
+									<td>$<span class="customServicePriceGeoIP">760.00</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<div class="table-title" id="title5">Titer Upgrades - Single/Pooled Packaging Service</div>
+						<table id="table5" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+							<thead>
+								<tr>
+									<th>Service&nbsp;Name</th>
+									<th>Size</th>
+									<th>CAT.&nbsp;NO.</th>
+									<th>PRICE</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Upgrade from 10^9 AAV Virus to High Titer AAV Virus (10^12 GC/ml)</td>
+									<td>2&nbsp;x&nbsp;100&nbsp;ul</td>
+									<td>C288</td>
+									<td>$<span class="customServicePriceGeoIP">500.00</span></td>
+								</tr>
+								<tr>
+									<td>Upgrade from 10^9 AAV Virus to High Titer AAV Virus (10^13 GC/ml)</td>
+									<td>2&nbsp;x&nbsp;100&nbsp;ul</td>
+									<td>C289</td>
+									<td>$<span class="customServicePriceGeoIP">1100.00</span></td>
+								</tr>
+								<tr>
+									<td>Upgrade from 10^9 AAV Virus to High Titer Crude Preparation AAV Virus (10^12 GC/ml)</td>
+									<td>2&nbsp;x&nbsp;100&nbsp;ul</td>
+									<td>C479</td>
+									<td>$<span class="customServicePriceGeoIP">200.00</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<div class="table-title" id="title6">Titer Upgrades – Set of 3 sgRNAs, Individual Packaging Service</div>
+						<table id="table6" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+							<thead>
+								<tr>
+									<th>Service&nbsp;Name</th>
+									<th>Size</th>
+									<th>CAT.&nbsp;NO.</th>
+									<th>PRICE</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Upgrade Set of 3 sgRNAs AAV to High Titer AAV (10^12 GC/ml), Individually Packaged</td>
+									<td>3&nbsp;x&nbsp;(2&nbsp;x&nbsp;100&nbsp;ul)</td>
+									<td>C405</td>
+									<td>$<span class="customServicePriceGeoIP">800.00</span></td>
+								</tr>
+								<tr>
+									<td>Upgrade Set of 3 sgRNAs AAV to High Titer AAV (10^13 GC/ml) , Individually Packaged</td>
+									<td>3&nbsp;x&nbsp;(2&nbsp;x&nbsp;100&nbsp;ul)</td>
+									<td>C406</td>
+									<td>$<span class="customServicePriceGeoIP">2500.00</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<br />Don't Know Which Serotype To Use?
+					<div>
+						<p class="banners abm-category-workflow"><a href="javascript:void(0)"><img src="/pub/media/catalog/customservice/custom-crispr-sgrna-aav-vectors-viruses/tissue.jpg" alt="Workflow" /></a></p>
+					</div>
+				</div>
 				<div id = "nocollapse">
 					<div class="table-title">Custom AAV Virus CRISPR Services:</div>
 					<div>Which Cas9 system are you interested in?</div>
@@ -1010,7 +1481,6 @@ fieldset[disabled] a.btn {
 		if(aav != "aav0"){
 			var x = [];
 			var temp_array = document.getElementsByTagName("tr");
-
 			for(var i =0; i<temp_array.length;i++){
 				if(temp_array[i].parentNode.nodeName == "TBODY"){
 					if(temp_array[i].parentNode.parentNode.id== "table2" || temp_array[i].parentNode.parentNode.id== "table3" || temp_array[i].parentNode.parentNode.id== "table4"){
@@ -1018,7 +1488,6 @@ fieldset[disabled] a.btn {
 					}
 				}
 			}
-
 			for(var i = 0; i < x.length; i++){
 				if(x[i].parentNode.parentNode.id== "table2" || x[i].parentNode.parentNode.id== "table3" || x[i].parentNode.parentNode.id== "table4"){
 					if(x[i].getAttribute("data-aav")==aav){
@@ -1247,6 +1716,20 @@ fieldset[disabled] a.btn {
 		}
 	}
 
+	function myFunction(x) {
+		if (x.matches) {
+			document.getElementById("yescollapse").style.display="block";
+			document.getElementById("collapsetable").style.display="";
+			document.getElementById("linebreak").style.display="";
+			document.getElementById("nocollapse").style.display="none";
+		}
+		else {
+			document.getElementById("yescollapse").style.display="none";
+			document.getElementById("collapsetable").style.display="none";
+			document.getElementById("linebreak").style.display="none";
+			document.getElementById("nocollapse").style.display="block";
+		}
+	}
 	function changeline(){
 		if (c1.matches) {
 			document.getElementById("button-group-small").innerHTML = text1 + text2 + text3 + text4 + text5 + text6 + addon + text7 + text8  + text9 + text10 + text11 + text12 + text13;
@@ -1271,9 +1754,9 @@ var d2 = window.matchMedia("(min-width:701px) and (max-width:1058px)")
 var c1 = window.matchMedia("(min-width: 607px) and (max-width: 700px)")
 var c2 = window.matchMedia("(min-width: 453px) and (max-width: 606px)")
 var c3 = window.matchMedia("(max-width: 452px)")
-
+myFunction(x)
 changeline()
-
+x.addListener(myFunction)
 c1.addListener(changeline)
 c2.addListener(changeline)
 c3.addListener(changeline)
