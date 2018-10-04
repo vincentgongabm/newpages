@@ -1,3 +1,25 @@
+<style type="text/css" xml="space">
+.bg-blue1{
+	padding:2em;
+	height: 17em;
+	background-color: #1E90FF;
+}
+.bg-blue1 p {
+	color: #fff;
+	padding-right: 1em;
+	text-align: left;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	line-height:1.6em;
+}
+.height-2421{
+	height:17em;
+	background-color: #eee;
+}
+.abm-category-searchbox{padding: 3em 1em 2em 1em;}
+</style>
 <h1 id="abm-category-home-title">Lab Equipment and Consumables</h1>
 
 <nav id="abm-navbar" class="navbar navbar-fixed-top abm-navbar abm-affix abm-category-navbar-relative hidden-xs">
@@ -47,17 +69,17 @@
 		<div id="abmNavbar" class="collapse navbar-collapse abm-navbar-collapse">
 			<ul class="nav navbar-nav navbar-6">
 				<li><a href="#abm-category-section1">Overview</a></li>
-				<li><a href="#abm-category-section2">Services</a></li>
-				<li><a href="#abm-category-section3">Search Library</a></li>
+				<li><a href="#abm-category-section2">Search Products</a></li>
 				<li><a href="#abm-category-section4">Products</a></li>
 				<li><a href="#abm-category-section5">Resources</a></li>
 				<li><a href="#abm-category-section6">Promotions</a></li>
+				<li><a href="#abm-category-section4">Browse Products</a></li>
 			</ul>
 		</div>
 	</div>
 </nav>
 
-<div id="abm-category-section1" class="abm-container-fluid"><!--<h3>Overview</h3>-->
+<div id="abm-category-section1" class="abm-container-fluid">
 	<div class="row">
 		<div class="col-md-8" style="text-align: left; padding-bottom: 3em;"><strong>abm</strong> provides a broad range of state-of-the-art laboratory equipment, furniture, consumables, and services to meet everyday labwork needs and research applications, helping you stay focused and achieve your research goals. From ultra-low freezers to gel documentation systems, furniture installation to pipette calibrations, our portfolio of lab equipment and services offers the most competitive prices on the market.
 		</div>
@@ -70,7 +92,30 @@
 		</div>
 	</div>
 </div>
-
+<div id="abm-category-section2" class="abm-container-fluid">
+	<h3 style="color: #000;">Search Products</h3>
+	<div class="row" style="padding-right: 15px; padding-left: 15px;">
+		<div class="bg-blue1 col-md-4 col-sm-4">
+			<div>
+				<p>We offer many types of laboratory equipment.</p>
+			</div>
+		</div>
+		<div class="tr-gray col-md-8 col-sm-8 height-2421">
+			<div class="tr-gray abm-category-searchbox">
+				<form class="form-inline" style="padding-top: 20px;" action="/catalogsearch/result/" method="get">
+					<p style="margin-bottom: 30px;">Search our equipment by name, or <a href="#abm-category-section4">click here</a> to browse products.</p>
+					<div class="form-group">
+						<input id="abm-cat-name" name="cat" readonly="readonly" type="hidden" value="" />
+						<input id="abm-cat-input" class="autosearch-input form-control" name="q" type="text" />
+					</div>
+					<button class="button-search" type="submit">Search</button>
+				</form>
+			</div>
+			<br />
+			<br />
+		</div>
+	</div>
+</div>
 <div id="abm-category-section4" class="abm-container-fluid">
 	<h3>Products</h3>
 	<div class="row">
@@ -253,58 +298,7 @@
 			</ul>
 		</div>
 	</div>
-<!-- 	<div class="row">
-		<div class="module abm-category-module col-md-12">
-			<ul class="htmlcontent-home">
-				<li class="col-sm-3 col-md-3 col-xs-6">
-					<div class="banners">
-						<div>
-							<a href="https://www.abmgood.com/CRISPR-product-selector/product-selector-form.php" target="_blank">
-								<img src="/pub/media/catalog/category/imgs/crispr_test/Resources_CRISPR-Experimental-Design-Tool.png" alt="CRISPR Experimental Design Tool" width="100%" />
-								<br />
-							</a>
-							<div class="abm-category-image-title">
-								<strong>Culture – An Introduction</strong>
-								<br />
-								<i>Knowledge Base</i>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="col-sm-3 col-md-3 col-xs-6">
-					<div class="banners">
-						<div>
-							<a href="/pub/media/catalog/category/docs/c/r/CRISPR-Quick-Guide-Protocol-V2.pdf" target="_blank">
-								<img src="/pub/media/catalog/category/imgs/crispr_test/Resources_CRISPR-Knockout-Manual.png" alt="CRISPR Knockout Manual" width="100%" />
-								<br />
-							</a>
-							<div class="abm-category-image-title">
-								<strong>CRISPR Knockout Manual</strong>
-								<br />
-								<i>CRISPR Guides/Manuals</i>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="col-sm-3 col-md-3 col-xs-6">
-					<div class="banners">
-						<div>
-							<a target="_blank">
-								<img src="/pub/media/catalog/category/imgs/crispr_test/Resources_CRISPR-Case-Studies.png" alt="CRISPR Case Studies" width="100%" />
-								<br />
-							</a>
-							<div class="abm-category-image-title">
-								<strong>CRISPR Case Studies</strong>
-								<br />
-								<i>CRISPR Guides/Manuals</i>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="col-sm-3 col-md-3 col-xs-6"></li>
-			</ul>
-		</div>
-	</div> -->
+</div>
 	
 
 <div id="abm-category-section6" class="abm-container-fluid">
