@@ -7,7 +7,7 @@
 
     .tooltip-category .tooltiptext-category {
         visibility: hidden;
-        width: 330px;
+        width: 232px;
         background-color: #f7f7f7;
         color: black;
         text-align: justify;
@@ -37,6 +37,21 @@
     }
     .tooltip-category:hover {
         color: #ff734d;
+    }
+    @media (max-width:767px){
+    	.tooltip-category .tooltiptext-category{width:190px;}
+    }
+    @media (max-width:600px){
+    	#table1 thead tr th:nth-child(1){padding: 15px 5px;}
+        #table1 thead tr th:nth-child(2){padding: 15px 3px;}
+        #table1 thead tr th:nth-child(3){padding: 15px 3px;}
+        #table1 thead tr th:nth-child(4){padding: 15px 3px;}
+        #table1 thead tr th:nth-child(5){padding: 15px 7px;}
+        #table1 tbody tr td:nth-child(1){padding: 15px 5px;}
+        #table1 tbody tr td:nth-child(2){padding: 15px 3px;}
+        #table1 tbody tr td:nth-child(3){padding: 15px 3px;}
+		#table1 tbody tr td:nth-child(5){padding: 15px 7px;}
+
     }
 </style>
 <h1 id="abm-category-home-title">Custom Cloning Service</h1>
@@ -89,14 +104,14 @@
 			<div class="col-lg-8">
 				<h3 class="abm-perfect-h3">Service Details</h3>
 				<div class="table-title">Core Services</div>
-				<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+				<table id="table1" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
 					<thead>
 						<tr>
-							<th>Service Name</th>
+							<th>Service&nbsp;Name</th>
 							<th>Description</th>
 							<th>Unit</th>
-							<th>Cat. No.</th>
-							<th>Price per sample</th>
+							<th>Cat.&nbsp;No.</th>
+							<th>Unit&nbsp;Price</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -111,7 +126,7 @@
 									<li>Sequence must be approved for economy synthesis by <strong>abm</strong></li>
 								</ul>
 							</td>
-							<td>1.0 μg</td>
+							<td>1.0&nbsp;μg</td>
 							<td>C078</td>
 							<td>$<span class="customServicePriceGeoIP">250.00</span></td>
 						</tr>
@@ -125,7 +140,7 @@
 									<li>Minimum charge of $<span class="customServicePriceGeoIP">99.00</span></li>
 								</ul>
 							</td>
-							<td>1.0 μg</td>
+							<td>1.0&nbsp;μg</td>
 							<td>C098</td>
 							<td>Starting at USD$0.18/bp*</td>
 						</tr>
@@ -138,7 +153,7 @@
 									<li>For full sequencing, please refer to C197.</li>
 								</ul>
 							</td>
-							<td>1.0 μg</td>
+							<td>1.0&nbsp;μg</td>
 							<td>C096</td>
 							<td>$<span class="customServicePriceGeoIP">125.00</span></td>
 						</tr>
@@ -151,7 +166,7 @@
 									<li>Genes over 3 kbp are subject to an additional charge of $100.00/kbp (C100).</li>
 								</ul>
 							</td>
-							<td>1.0 μg</td>
+							<td>1.0&nbsp;μg</td>
 							<td>C097</td>
 							<td>$<span class="customServicePriceGeoIP">225.00</span></td>
 						</tr>
@@ -164,7 +179,7 @@
 									<li>Fragments over 2 kbp are subject to an additional charge of $100.00/kbp (C100).</li>
 								</ul>
 							</td>
-							<td>1.0 μg</td>
+							<td>1.0&nbsp;μg</td>
 							<td>C047</td>
 							<td>$<span class="customServicePriceGeoIP">150.00</span></td>
 						</tr>
@@ -187,7 +202,7 @@
 									<li>Change the promoter in one of <strong>abm</strong>’s vectors or a vector of your choice to any of the following: CMV, EF1α, PGK, UbC</li>
 								</ul>
 							</td>
-							<td>1.0 μg</td>
+							<td>1.0&nbsp;μg</td>
 							<td>C126</td>
 							<td>$<span class="customServicePriceGeoIP">350.00</span></td>
 						</tr>
@@ -198,7 +213,7 @@
 									<li>Addition/Removal of an N-terminal or C-terminal tag smaller than 30 bp</li>
 								</ul>
 							</td>
-							<td>1.0 μg</td>
+							<td>1.0&nbsp;μg</td>
 							<td>C127</td>
 							<td>$<span class="customServicePriceGeoIP">250.00</span></td>
 						</tr>
@@ -210,7 +225,7 @@
 									<li>Tags over 1 kbp are subject to an additional charge of $100.00/kbp (C100).</li>
 								</ul>
 							</td>
-							<td>1.0 μg</td>
+							<td>1.0&nbsp;μg</td>
 							<td>C128</td>
 							<td>$<span class="customServicePriceGeoIP">350.00</span></td>
 						</tr>
@@ -221,7 +236,7 @@
 									<li>Addition, removal or switching of a reporter (e.g. GFP, RFP, Luc) in one of <strong>abm</strong>’s vectors or a vector of your choice.</li>
 								</ul>
 							</td>
-							<td>1.0 μg</td>
+							<td>1.0&nbsp;μg</td>
 							<td>C129</td>
 							<td>$<span class="customServicePriceGeoIP">350.00</span></td>
 						</tr>
@@ -232,7 +247,7 @@
 									<li>Switching of a Puromycin resistance gene to Neomycin, Hygromycin or Blasticidin resistance in one of <strong>abm</strong>’s vectors or a vector of your choice.</li>
 								</ul>
 							</td>
-							<td>1.0 μg</td>
+							<td>1.0&nbsp;μg</td>
 							<td>C140</td>
 							<td>$<span class="customServicePriceGeoIP">350.00</span></td>
 						</tr>
@@ -240,14 +255,14 @@
 				</table>
 				<b class="subtitle" style="padding-left: 0.5em;">Deliverables</b><br />    You will receive 1-2 ug of custom construct and a service report by default. <br />
 				<div class="table-title">ADD-ON-SERVICES</div>
-				<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
+				<table id="table2" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
 					<thead>
 						<tr>
-							<th>Service Name</th>
+							<th>Service&nbsp;Name</th>
 							<th>Description</th>
 							<th>Unit</th>
-							<th>Cat. No.</th>
-							<th>Price per sample</th>
+							<th>Cat.&nbsp;No.</th>
+							<th>Unit&nbsp;Price</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -258,7 +273,7 @@
 									<li>Verify the sequence and position of your gene of interest or sequence your PCR products.</li>
 								</ul>
 							</td>
-							<td>Single Reaction</td>
+							<td>Single&nbsp;Reaction</td>
 							<td>C199</td>
 							<td>$<span class="customServicePriceGeoIP">7.50</span></td>
 						</tr>
@@ -269,7 +284,7 @@
 									<li>Bacterial culture of the custom plasmid.</li>
 								</ul>
 							</td>
-							<td>1 clone</td>
+							<td>1&nbsp;clone</td>
 							<td>C139</td>
 							<td>$<span class="customServicePriceGeoIP">25.00</span></td>
 						</tr>
@@ -280,7 +295,7 @@
 									<li>Amplification of the custom plasmid.</li>
 								</ul>
 							</td>
-							<td>10-20 μg</td>
+							<td>10-20&nbsp;μg</td>
 							<td>C309</td>
 							<td>$<span class="customServicePriceGeoIP">75.00</span>/prep</td>
 						</tr>
@@ -291,7 +306,7 @@
 									<li>Amplification of the custom plasmid.</li>
 								</ul>
 							</td>
-							<td>80-100 μg</td>
+							<td>80-100&nbsp;μg</td>
 							<td>C310</td>
 							<td>$<span class="customServicePriceGeoIP">150.00</span>/prep</td>
 						</tr>
@@ -309,7 +324,7 @@
 		<div class="col-lg-8">
 			<h3 class="abm-perfect-h3">Additional Info</h3>
 			<b class="subtitle">abm Vectors Available for Use in the Above Services</b><br /> Cloning into pUC57 or pORF is free of charge; for use of other <strong>abm</strong> vector backbones the charge is $350 (Cat. No. C318). Here is a selected list of expression vectors. Cloning into retrovirus, HSV, baculovirus, and much more is also offered at <strong>abm</strong>.<br /><br />
-			<table class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table2">
+			<table id="table3" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table2">
 				<thead>
 					<tr>
 						<th>Lentiviral System</th>
