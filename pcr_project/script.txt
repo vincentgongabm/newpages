@@ -1,0 +1,2 @@
+cd C:\Users\Administrator\Desktop\vincent\New Pages\newpages\pcr_project
+C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\python.exe editing.py
