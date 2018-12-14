@@ -1,14 +1,14 @@
 import mysql.connector
 import csv
 
-def sku(str):
-	return str+'-vin'
+def sku(st):
+	return st+'-vin'
 	
-def attribute_set(str):
+def attribute_set(st):
 	cnx=mysql.connector.connect(host='localhost', user='root', password='vincent', database='pcr_tables')
 	cursor = cnx.cursor()
 
-	query=("select attribute_set_name FROM `sku_attribute_set_code` where sku ='" + str + "';")
+	query=("select attribute_set_name FROM `sku_attribute_set_code` where sku ='" + st + "';")
 	cursor.execute(query)
 	result = cursor.fetchone()
 	if result is None:
@@ -19,19 +19,36 @@ def attribute_set(str):
 def type():
 	return "bundle"
 
-def bundle_options(str):
+def bundle_options(st):
 	cnx=mysql.connector.connect(host='localhost', user='root', password='vincent', database='pcr_tables')
 	cursor = cnx.cursor()
 
-	query=("select * FROM `multi_comp_kit_components` where kit_number ='" + str + "';")
+	query=("select * FROM `multi_comp_kit_components` where kit_number ='" + st + "';")
 	cursor.execute(query)
 	result = cursor.fetchall()
 	length = sum(1 for _ in result)
 	s = "-*;"
-	count = 1
+	count = 0
 	for x in result:
-		s+="component"+count
-	
+		s+="component"+str(count)+":"+"cname:checkbox:1:"+str(count)+";"
+		count+=1
+	return s[:-1]
+
+def bundle_skus(st):
+	cnx=mysql.connector.connect(host='localhost', user='root', password='vincent', database='pcr_tables')
+	cursor = cnx.cursor()
+
+	query=("select * FROM `multi_comp_kit_components` where kit_number ='" + st + "';")
+	cursor.execute(query)
+	result = cursor.fetchall()
+	s = ""
+	count = 0
+	for x in result:
+		s+="component"+str(count)+":"+x[2]+":1:0:"+str(count)+":1:0:0;"
+		count+=1
+	return s[:-1]
+
+
 cnx=mysql.connector.connect(host='localhost', user='root', password='vincent', database='pcr_tables')
 cursor = cnx.cursor()
 
@@ -43,7 +60,7 @@ for catno in result:
 	bundle_list.append(catno[0])
 
 
-bundle_options((bundle_list[0]))
+print(bundle_skus((bundle_list[0])))
 
 
 
