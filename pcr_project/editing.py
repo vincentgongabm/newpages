@@ -48,6 +48,56 @@ def bundle_skus(st):
 		count+=1
 	return s[:-1]
 
+def categories(st):
+	return "Default Category"
+
+def name(st):
+	cnx=mysql.connector.connect(host='localhost', user='root', password='vincent', database='pcr_tables')
+	cursor = cnx.cursor()
+
+	query=("select pname FROM `prodpcr` where catNo ='" + st + "';")
+	cursor.execute(query)
+	result = cursor.fetchone()
+	if result is None:
+		return ""
+	else:
+		return result[0]
+
+def price(st):
+	cnx=mysql.connector.connect(host='localhost', user='root', password='vincent', database='pcr_tables')
+	cursor = cnx.cursor()
+
+	query=("select price FROM `prodpcr` where catNo ='" + st + "';")
+	cursor.execute(query)
+	result = cursor.fetchone()
+	if result is None:
+		return ""
+	else:
+		return result[0]
+
+def description(st):
+	cnx=mysql.connector.connect(host='localhost', user='root', password='vincent', database='pcr_tables')
+	cursor = cnx.cursor()
+
+	query=("select description FROM `prodpcr` where catNo ='" + st + "';")
+	cursor.execute(query)
+	result = cursor.fetchone()
+	if result is None:
+		return ""
+	else:
+		return result[0]
+
+def additional_attributes(st):
+	cnx=mysql.connector.connect(host='localhost', user='root', password='vincent', database='pcr_tables')
+	cursor = cnx.cursor()
+
+	query=("select description FROM `prodpcr` where catNo ='" + st + "';")
+	cursor.execute(query)
+	result = cursor.fetchone()
+	if result is None:
+		return ""
+	else:
+		return result[0]
 
 cnx=mysql.connector.connect(host='localhost', user='root', password='vincent', database='pcr_tables')
 cursor = cnx.cursor()
@@ -60,7 +110,7 @@ for catno in result:
 	bundle_list.append(catno[0])
 
 
-print(bundle_skus((bundle_list[0])))
+print(price((bundle_list[99])))
 
 
 
