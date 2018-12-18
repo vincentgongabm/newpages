@@ -87,17 +87,43 @@ def description(st):
 	else:
 		return result[0]
 
-def additional_attributes(st):
+
+def application(st):
 	cnx=mysql.connector.connect(host='localhost', user='root', password='vincent', database='pcr_tables')
 	cursor = cnx.cursor()
 
-	query=("select description FROM `prodpcr` where catNo ='" + st + "';")
+	query=("select application FROM `prodpcr` where catNo ='" + st + "';")
 	cursor.execute(query)
 	result = cursor.fetchone()
 	if result is None:
 		return ""
 	else:
 		return result[0]
+
+def notes(st):
+	cnx=mysql.connector.connect(host='localhost', user='root', password='vincent', database='pcr_tables')
+	cursor = cnx.cursor()
+
+	query=("select notes FROM `prodpcr` where catNo ='" + st + "';")
+	cursor.execute(query)
+	result = cursor.fetchone()
+	if result is None:
+		return ""
+	else:
+		return result[0]
+
+def storage(st):
+	cnx=mysql.connector.connect(host='localhost', user='root', password='vincent', database='pcr_tables')
+	cursor = cnx.cursor()
+
+	query=("select storage FROM `prodpcr` where catNo ='" + st + "';")
+	cursor.execute(query)
+	result = cursor.fetchone()
+	if result is None:
+		return ""
+	else:
+		return result[0]
+
 
 cnx=mysql.connector.connect(host='localhost', user='root', password='vincent', database='pcr_tables')
 cursor = cnx.cursor()
@@ -109,13 +135,7 @@ bundle_list = []
 for catno in result:
 	bundle_list.append(catno[0])
 
-
-print(price((bundle_list[99])))
-
-
-
-
-
-# with open('editing.csv', 'a', newline='') as f:
-# 	writer = csv.writer(f)
-# 	writer.writerow(['tb1-vin,Default,bundle,-*;comp1:comp1name:checkbox:1:0;comp2:comp2name:checkbox:1:1;comp3:comp3name:checkbox:1:2,comp1:G457-1:1:0:0:1:0:0;comp2:RT-1B:1:0:1:1:0:0;comp2:RT-1B:1:0:2:1:0:0,1,0,,1,1,1,,,Default,Computer,d,sd,300,,100,1,1,1,1,4,2,Taxable goods,,,,'])
+for i in range(len(bundle_list)):
+	with open('new.csv', 'a', newline='') as f:
+		writer = csv.writer(f)
+		writer.writerow([sku(bundle_list[i]), description(bundle_list[i]), application(bundle_list[i]), notes(bundle_list[i]), storage(bundle_list[i])])
