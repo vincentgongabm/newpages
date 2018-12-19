@@ -85,7 +85,9 @@ def description(st):
 	if result is None:
 		return ""
 	else:
-		return result[0]
+		result = result[0].replace('\u03bc','Âµ')
+		result = result.replace('\u03bb','Âλ')
+		return result
 
 
 def application(st):
@@ -98,7 +100,9 @@ def application(st):
 	if result is None:
 		return ""
 	else:
-		return result[0]
+		result = result[0].replace('\u03bc','Âµ')
+		result = result.replace('\u03bb','Âλ')
+		return result
 
 def notes(st):
 	cnx=mysql.connector.connect(host='localhost', user='root', password='vincent', database='pcr_tables')
@@ -110,7 +114,9 @@ def notes(st):
 	if result is None:
 		return ""
 	else:
-		return result[0]
+		result = result[0].replace('\u03bc','Âµ')
+		result = result.replace('\u03bb','Âλ')
+		return result
 
 def storage(st):
 	cnx=mysql.connector.connect(host='localhost', user='root', password='vincent', database='pcr_tables')
@@ -122,7 +128,9 @@ def storage(st):
 	if result is None:
 		return ""
 	else:
-		return result[0]
+		result = result[0].replace('\u03bc','Âµ')
+		result = result.replace('\u03bb','Âλ')
+		return result
 
 
 cnx=mysql.connector.connect(host='localhost', user='root', password='vincent', database='pcr_tables')
@@ -135,6 +143,7 @@ bundle_list = []
 for catno in result:
 	bundle_list.append(catno[0])
 
+# bundle_list = ["G462"]
 for i in range(len(bundle_list)):
 	with open('new.csv', 'a', newline='') as f:
 		writer = csv.writer(f)
