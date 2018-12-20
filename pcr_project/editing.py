@@ -12,7 +12,7 @@ def attribute_set(st):
 	cursor.execute(query)
 	result = cursor.fetchone()
 	if result is None:
-		return ""
+		return "Default"
 	else:
 		return result[0]
 
@@ -59,7 +59,7 @@ def name(st):
 	cursor.execute(query)
 	result = cursor.fetchone()
 	if result is None:
-		return ""
+		return st+"name"
 	else:
 		return result[0]
 
@@ -71,7 +71,7 @@ def price(st):
 	cursor.execute(query)
 	result = cursor.fetchone()
 	if result is None:
-		return ""
+		return "99999"
 	else:
 		return result[0]
 
@@ -143,8 +143,7 @@ bundle_list = []
 for catno in result:
 	bundle_list.append(catno[0])
 
-# bundle_list = ["G462"]
 for i in range(len(bundle_list)):
 	with open('new.csv', 'a', newline='') as f:
 		writer = csv.writer(f)
-		writer.writerow([sku(bundle_list[i]), description(bundle_list[i]), application(bundle_list[i]), notes(bundle_list[i]), storage(bundle_list[i])])
+		writer.writerow([sku(bundle_list[i]), attribute_set(bundle_list[i]), type(), bundle_options(bundle_list[i]), bundle_skus(bundle_list[i]), categories(bundle_list[i]), name(bundle_list[i]), price(bundle_list[i])])
