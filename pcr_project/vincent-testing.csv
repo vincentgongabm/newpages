@@ -1,0 +1,2 @@
+sku,attribute_set,type,bundle_options,bundle_skus,categories,name,price
+A1-20T-vin,Default,bundle,-*;component0:cname:checkbox:1:0;component1:cname:checkbox:1:1;component2:cname:checkbox:1:2;component3:cname:checkbox:1:3;component4:cname:checkbox:1:4,component0:A1-20T-1:1:0:0:1:0:0;component1:A1-20T-2:1:0:1:1:0:0;component2:A1-20T-3:1:0:2:1:0:0;component3:A1-20T-4:1:0:3:1:0:0;component4:A1-20T-5:1:0:4:1:0:0,Default Category,A1-20Tname,99999
