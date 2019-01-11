@@ -46,7 +46,7 @@ def bundle_skus(st):
 	for x in result:
 		s+="component"+str(count)+":"+x[2]+":1:0:"+str(count)+":1:0:0;"
 		count+=1
-	return s[:-1]
+	return s
 
 def categories(st):
 	return "Default Category"
@@ -144,6 +144,7 @@ for catno in result:
 	bundle_list.append(catno[0])
 
 for i in range(len(bundle_list)):
-	with open('new.csv', 'a', newline='') as f:
+	with open('final.csv', 'a', newline='') as f:
 		writer = csv.writer(f)
-		writer.writerow([sku(bundle_list[i]), attribute_set(bundle_list[i]), type(), bundle_options(bundle_list[i]), bundle_skus(bundle_list[i]), categories(bundle_list[i]), name(bundle_list[i]), price(bundle_list[i])])
+		# writer.writerow([sku(bundle_list[i]), attribute_set(bundle_list[i]), type(), bundle_options(bundle_list[i]), bundle_skus(bundle_list[i]), categories(bundle_list[i]), name(bundle_list[i]), price(bundle_list[i])])
+		writer.writerow([sku(bundle_list[i]),'',attribute_set(bundle_list[i]),'bundle','Default Category','base',name(bundle_list[i]),'','','',1,'Taxable Goods','Catalog, Search',price(bundle_list[i]),30,name(bundle_list[i]).lower(),'','','','','','','','','','','','','','Block after Info Column','','','','Use config','','','','','','','','','',0,0,1,0,1,1,1,1,10000,1,1,1,1,1,1,1,1,1,0,0,0,'','','','','','','','','','','dynamic','dynamic','Price range','dynamic',bundle_skus(bundle_list[i]),bundle_options(bundle_list[i]),'','','',])
