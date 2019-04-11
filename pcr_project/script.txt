@@ -1,2 +1,61 @@
 cd C:\Users\Administrator\Desktop\vincent\New Pages\newpages\pcr_project
 C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\python editing.py
+
+
+56 error(s) found	Hide Details
+SKU E024-vin - 1 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU E024-vin - 2 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #19
+SKU E071-vin - 3 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU E071-vin - 4 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #48
+SKU E088-vin - 5 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU E088-vin - 6 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #53
+SKU G018-1mg-vin - 7 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G018-1mg-vin - 8 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #70
+SKU G019-1mg-vin - 9 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G019-1mg-vin - 10 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #71
+SKU G020-1mg-vin - 11 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G020-1mg-vin - 12 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #72
+SKU G036-1mg-vin - 13 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G036-1mg-vin - 14 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #82
+SKU G041-1mg-vin - 15 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G041-1mg-vin - 16 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #86
+SKU G043-1mg-vin - 17 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G043-1mg-vin - 18 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #87
+SKU G077-1mg-vin - 19 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G077-1mg-vin - 20 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #103
+SKU G093-1mg-vin - 21 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G093-1mg-vin - 22 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #105
+SKU G094-1mg-vin - 23 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G094-1mg-vin - 24 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #106
+SKU G096-1mg-vin - 25 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G096-1mg-vin - 26 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #107
+SKU G098-1mg-vin - 27 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G098-1mg-vin - 28 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #108
+SKU G148-1mg-vin - 29 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G148-1mg-vin - 30 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #113
+SKU G163-1mg-vin - 31 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G163-1mg-vin - 32 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #114
+SKU G164-1mg-vin - 33 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G164-1mg-vin - 34 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #115
+SKU G189-1mg-vin - 35 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G189-1mg-vin - 36 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #119
+SKU G191-1mg-vin - 37 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G191-1mg-vin - 38 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #120
+SKU G466-1mg-vin - 39 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G466-1mg-vin - 40 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #160
+SKU G472-vin - 41 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G472-vin - 42 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #167
+SKU G965-vin - 43 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G965-vin - 44 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #234
+SKU G966-vin - 45 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU G966-vin - 46 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #235
+SKU MasterMix-U-vin - 47 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU MasterMix-U-vin - 48 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #311
+SKU MasterMix-U-XL-vin - 49 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU MasterMix-U-XL-vin - 50 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #312
+SKU Sample-G008-1-vin - 51 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU Sample-G008-1-vin - 52 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #337
+SKU Sample-G472-vin - 53 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU Sample-G472-vin - 54 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #376
+SKU Sample-MasterMix-U-vin - 55 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 -
+SKU Sample-MasterMix-U-vin - 56 SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'product_id' at row 1 - ERROR ON RECORD #430
