@@ -1,0 +1,7 @@
+https://medium.com/@hadi.fadlullah/installing-hadoop-3-1-0-multi-node-cluster-on-ubuntu-16-04-step-by-step-8d1954b31505
+https://stackoverflow.com/questions/33949589/package-org-apache-hadoop-conf-does-not-exist
+https://hadoop.apache.org/docs/r3.1.0/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html#Example:_WordCount_v2.0
+http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/#Running%20a%20MapReduce%20job
+https://hadoop.apache.org/docs/r3.1.0/hadoop-yarn/hadoop-yarn-common/yarn-default.xml
+http://hadoop.apache.org/docs/r3.1.0/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml
+https://blog.cloudera.com/blog/2015/10/untangling-apache-hadoop-yarn-part-2/
