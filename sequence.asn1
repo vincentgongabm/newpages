@@ -1,0 +1,1685 @@
+Seq-entry ::= set {
+  level 1,
+  class nuc-prot,
+  descr {
+    source {
+      genome genomic,
+      org {
+        taxname "Mus musculus",
+        common "house mouse",
+        db {
+          {
+            db "taxon",
+            tag id 10090
+          }
+        },
+        orgname {
+          name binomial {
+            genus "Mus",
+            species "musculus"
+          },
+          attrib "specified",
+          mod {
+            {
+              subtype strain,
+              subname "C57BL/6"
+            }
+          },
+          lineage "Eukaryota; Metazoa; Chordata; Craniata; Vertebrata;
+ Euteleostomi; Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia;
+ Myomorpha; Muroidea; Muridae; Murinae; Mus; Mus",
+          gcode 1,
+          mgcode 2,
+          div "ROD"
+        }
+      },
+      subtype {
+        {
+          subtype chromosome,
+          name "12"
+        },
+        {
+          subtype map,
+          name "12 33.52 cM"
+        }
+      }
+    },
+    pub {
+      pub {
+        pmid 30319350,
+        article {
+          title {
+            name "Sex Hormones Regulate SHANK Expression."
+          },
+          authors {
+            names std {
+              {
+                name ml "Berkel S",
+                affil str "Department of Human Molecular Genetics, Institute
+ of Human Genetics, Ruprecht-Karls-University, Heidelberg, Germany."
+              },
+              {
+                name ml "Eltokhi A",
+                affil str "Department of Human Molecular Genetics, Institute
+ of Human Genetics, Ruprecht-Karls-University, Heidelberg, Germany.; Research
+ Group of the Max Planck Institute for Medical Research at the Institute of
+ Anatomy and Cell Biology, Ruprecht-Karls-University, Heidelberg, Germany."
+              },
+              {
+                name ml "Frohlich H",
+                affil str "Department of Human Molecular Genetics, Institute
+ of Human Genetics, Ruprecht-Karls-University, Heidelberg, Germany."
+              },
+              {
+                name ml "Porras-Gonzalez D",
+                affil str "Department of Human Molecular Genetics, Institute
+ of Human Genetics, Ruprecht-Karls-University, Heidelberg, Germany."
+              },
+              {
+                name ml "Rafiullah R",
+                affil str "Department of Human Molecular Genetics, Institute
+ of Human Genetics, Ruprecht-Karls-University, Heidelberg, Germany."
+              },
+              {
+                name ml "Sprengel R",
+                affil str "Research Group of the Max Planck Institute for
+ Medical Research at the Institute of Anatomy and Cell Biology,
+ Ruprecht-Karls-University, Heidelberg, Germany."
+              },
+              {
+                name ml "Rappold GA",
+                affil str "Department of Human Molecular Genetics, Institute
+ of Human Genetics, Ruprecht-Karls-University, Heidelberg, Germany."
+              }
+            }
+          },
+          from journal {
+            title {
+              iso-jta "Front Mol Neurosci",
+              ml-jta "Front Mol Neurosci",
+              issn "1662-5099",
+              name "Frontiers in molecular neuroscience"
+            },
+            imp {
+              date std {
+                year 2018,
+                month 9,
+                day 25
+              },
+              volume "11",
+              pages "337",
+              language "eng",
+              pubstatus epublish,
+              history {
+                {
+                  pubstatus received,
+                  date std {
+                    year 2018,
+                    month 4,
+                    day 30
+                  }
+                },
+                {
+                  pubstatus accepted,
+                  date std {
+                    year 2018,
+                    month 8,
+                    day 28
+                  }
+                },
+                {
+                  pubstatus other,
+                  date std {
+                    year 2018,
+                    month 10,
+                    day 16,
+                    hour 6,
+                    minute 0
+                  }
+                },
+                {
+                  pubstatus pubmed,
+                  date std {
+                    year 2018,
+                    month 10,
+                    day 16,
+                    hour 6,
+                    minute 0
+                  }
+                },
+                {
+                  pubstatus medline,
+                  date std {
+                    year 2018,
+                    month 10,
+                    day 16,
+                    hour 6,
+                    minute 1
+                  }
+                }
+              }
+            }
+          },
+          ids {
+            pubmed 30319350,
+            doi "10.3389/fnmol.2018.00337",
+            other {
+              db "pmc",
+              tag str "PMC6167484"
+            },
+            other {
+              db "ELocationID doi",
+              tag str "10.3389/fnmol.2018.00337"
+            }
+          }
+        }
+      }
+    },
+    pub {
+      pub {
+        pmid 30107405,
+        article {
+          title {
+            name "Estradiol-Dependent and -Independent Stimulation of Kiss1
+ Expression in the Amygdala, BNST, and Lateral Septum of Mice."
+          },
+          authors {
+            names std {
+              {
+                name ml "Stephens SBZ",
+                affil str "Department of Obstetrics, Gynecology, and
+ Reproductive Sciences, University of California, San Diego, La Jolla,
+ California."
+              },
+              {
+                name ml "Di Giorgio NP",
+                affil str "Institute of Biology and Experimental Medicine,
+ National Scientific and Technical Research Council, Buenos Aires, Argentina."
+              },
+              {
+                name ml "Liaw RB",
+                affil str "Department of Obstetrics, Gynecology, and
+ Reproductive Sciences, University of California, San Diego, La Jolla,
+ California."
+              },
+              {
+                name ml "Parra RA",
+                affil str "Department of Obstetrics, Gynecology, and
+ Reproductive Sciences, University of California, San Diego, La Jolla,
+ California."
+              },
+              {
+                name ml "Yang JA",
+                affil str "Department of Obstetrics, Gynecology, and
+ Reproductive Sciences, University of California, San Diego, La Jolla,
+ California."
+              },
+              {
+                name ml "Chahal N",
+                affil str "Department of Obstetrics, Gynecology, and
+ Reproductive Sciences, University of California, San Diego, La Jolla,
+ California."
+              },
+              {
+                name ml "Lux-Lantos VA",
+                affil str "Institute of Biology and Experimental Medicine,
+ National Scientific and Technical Research Council, Buenos Aires, Argentina."
+              },
+              {
+                name ml "Kauffman AS",
+                affil str "Department of Obstetrics, Gynecology, and
+ Reproductive Sciences, University of California, San Diego, La Jolla,
+ California."
+              }
+            }
+          },
+          from journal {
+            title {
+              iso-jta "Endocrinology",
+              ml-jta "Endocrinology",
+              issn "1945-7170",
+              name "Endocrinology"
+            },
+            imp {
+              date std {
+                year 2018,
+                month 9,
+                day 1
+              },
+              volume "159",
+              issue "9",
+              pages "3389-3402",
+              language "eng",
+              pubstatus ppublish,
+              history {
+                {
+                  pubstatus received,
+                  date std {
+                    year 2018,
+                    month 6,
+                    day 14
+                  }
+                },
+                {
+                  pubstatus accepted,
+                  date std {
+                    year 2018,
+                    month 8,
+                    day 6
+                  }
+                },
+                {
+                  pubstatus other,
+                  date std {
+                    year 2019,
+                    month 9,
+                    day 1
+                  }
+                },
+                {
+                  pubstatus pubmed,
+                  date std {
+                    year 2018,
+                    month 8,
+                    day 15,
+                    hour 6,
+                    minute 0
+                  }
+                },
+                {
+                  pubstatus medline,
+                  date std {
+                    year 2019,
+                    month 3,
+                    day 6,
+                    hour 6,
+                    minute 0
+                  }
+                },
+                {
+                  pubstatus other,
+                  date std {
+                    year 2018,
+                    month 8,
+                    day 15,
+                    hour 6,
+                    minute 0
+                  }
+                }
+              }
+            }
+          },
+          ids {
+            pubmed 30107405,
+            pii "5068334",
+            doi "10.1210/en.2018-00583",
+            other {
+              db "pmc",
+              tag str "PMC6112601"
+            },
+            other {
+              db "ELocationID doi",
+              tag str "10.1210/en.2018-00583"
+            }
+          }
+        }
+      }
+    },
+    pub {
+      pub {
+        pmid 29800268,
+        article {
+          title {
+            name "Pregnancy and oestrogen regulate sinoatrial node calcium
+ homeostasis and accelerate pacemaking."
+          },
+          authors {
+            names std {
+              {
+                name ml "El Khoury N",
+                affil str "Montreal Heart Institute, Research Center, 5000
+ Belanger, Montreal, Quebec, Canada.; Department of Pharmacology and
+ Physiology, Faculty of Medicine, Universite de Montreal, Montreal, Quebec,
+ Canada."
+              },
+              {
+                name ml "Ross JL",
+                affil str "Montreal Heart Institute, Research Center, 5000
+ Belanger, Montreal, Quebec, Canada.; Faculty of Pharmacy, Universite de
+ Montreal, Montreal, Quebec, Canada."
+              },
+              {
+                name ml "Long V",
+                affil str "Montreal Heart Institute, Research Center, 5000
+ Belanger, Montreal, Quebec, Canada.; Faculty of Pharmacy, Universite de
+ Montreal, Montreal, Quebec, Canada."
+              },
+              {
+                name ml "Thibault S",
+                affil str "Montreal Heart Institute, Research Center, 5000
+ Belanger, Montreal, Quebec, Canada.; Faculty of Pharmacy, Universite de
+ Montreal, Montreal, Quebec, Canada."
+              },
+              {
+                name ml "Ethier N",
+                affil str "Montreal Heart Institute, Research Center, 5000
+ Belanger, Montreal, Quebec, Canada."
+              },
+              {
+                name ml "Fiset C",
+                affil str "Montreal Heart Institute, Research Center, 5000
+ Belanger, Montreal, Quebec, Canada.; Faculty of Pharmacy, Universite de
+ Montreal, Montreal, Quebec, Canada."
+              }
+            }
+          },
+          from journal {
+            title {
+              iso-jta "Cardiovasc. Res.",
+              ml-jta "Cardiovasc Res",
+              issn "1755-3245",
+              name "Cardiovascular research"
+            },
+            imp {
+              date std {
+                year 2018,
+                month 10,
+                day 1
+              },
+              volume "114",
+              issue "12",
+              pages "1605-1616",
+              language "eng",
+              pubstatus ppublish,
+              history {
+                {
+                  pubstatus received,
+                  date std {
+                    year 2017,
+                    month 9,
+                    day 21
+                  }
+                },
+                {
+                  pubstatus accepted,
+                  date std {
+                    year 2018,
+                    month 5,
+                    day 17
+                  }
+                },
+                {
+                  pubstatus pubmed,
+                  date std {
+                    year 2018,
+                    month 5,
+                    day 26,
+                    hour 6,
+                    minute 0
+                  }
+                },
+                {
+                  pubstatus medline,
+                  date std {
+                    year 2018,
+                    month 5,
+                    day 26,
+                    hour 6,
+                    minute 0
+                  }
+                },
+                {
+                  pubstatus other,
+                  date std {
+                    year 2018,
+                    month 5,
+                    day 26,
+                    hour 6,
+                    minute 0
+                  }
+                }
+              }
+            }
+          },
+          ids {
+            pubmed 29800268,
+            pii "5001811",
+            doi "10.1093/cvr/cvy129",
+            other {
+              db "pmc",
+              tag str "PMC6148331"
+            },
+            other {
+              db "ELocationID doi",
+              tag str "10.1093/cvr/cvy129"
+            }
+          }
+        }
+      }
+    },
+    pub {
+      pub {
+        pmid 29554271,
+        article {
+          title {
+            name "Core Binding Factor beta Expression in Ovarian Granulosa
+ Cells Is Essential for Female Fertility."
+          },
+          authors {
+            names std {
+              {
+                name ml "Lee-Thacker S",
+                affil str "Department of Obstetrics and Gynecology, Chandler
+ Medical Center, University of Kentucky, Lexington, Kentucky."
+              },
+              {
+                name ml "Choi Y",
+                affil str "Department of Obstetrics and Gynecology, Chandler
+ Medical Center, University of Kentucky, Lexington, Kentucky."
+              },
+              {
+                name ml "Taniuchi I",
+                affil str "Laboratory for Transcriptional Regulation, RIKEN
+ Center for Integrative Medical Sciences, Yokohama, Kanagawa, Japan."
+              },
+              {
+                name ml "Takarada T",
+                affil str "Department of Regenerative Science, Okayama
+ University Graduate School of Medicine, Dentistry and Pharmaceutical
+ Sciences, Okayama, Japan."
+              },
+              {
+                name ml "Yoneda Y",
+                affil str "Section of Prophylactic Pharmacology, Kanazawa
+ University, Kanazawa, Ishikawa, Japan."
+              },
+              {
+                name ml "Ko C",
+                affil str "Department of Comparative Biosciences, College of
+ Veterinary Medicine, University of Illinois at Urbana-Champaign, Urbana,
+ Illinoisa."
+              },
+              {
+                name ml "Jo M",
+                affil str "Department of Obstetrics and Gynecology, Chandler
+ Medical Center, University of Kentucky, Lexington, Kentucky."
+              }
+            }
+          },
+          from journal {
+            title {
+              iso-jta "Endocrinology",
+              ml-jta "Endocrinology",
+              issn "1945-7170",
+              name "Endocrinology"
+            },
+            imp {
+              date std {
+                year 2018,
+                month 5,
+                day 1
+              },
+              volume "159",
+              issue "5",
+              pages "2094-2109",
+              language "eng",
+              pubstatus ppublish,
+              history {
+                {
+                  pubstatus received,
+                  date std {
+                    year 2018,
+                    month 1,
+                    day 2
+                  }
+                },
+                {
+                  pubstatus accepted,
+                  date std {
+                    year 2018,
+                    month 3,
+                    day 11
+                  }
+                },
+                {
+                  pubstatus other,
+                  date std {
+                    year 2019,
+                    month 5,
+                    day 1
+                  }
+                },
+                {
+                  pubstatus pubmed,
+                  date std {
+                    year 2018,
+                    month 3,
+                    day 20,
+                    hour 6,
+                    minute 0
+                  }
+                },
+                {
+                  pubstatus medline,
+                  date std {
+                    year 2019,
+                    month 1,
+                    day 16,
+                    hour 6,
+                    minute 0
+                  }
+                },
+                {
+                  pubstatus other,
+                  date std {
+                    year 2018,
+                    month 3,
+                    day 20,
+                    hour 6,
+                    minute 0
+                  }
+                }
+              }
+            }
+          },
+          ids {
+            pubmed 29554271,
+            pii "4938672",
+            doi "10.1210/en.2018-00011",
+            other {
+              db "pmc",
+              tag str "PMC5905395"
+            },
+            other {
+              db "ELocationID doi",
+              tag str "10.1210/en.2018-00011"
+            }
+          }
+        }
+      }
+    },
+    pub {
+      pub {
+        pmid 29550215,
+        article {
+          title {
+            name "Estrogen receptor beta modulates permeability transition in
+ brain mitochondria."
+          },
+          authors {
+            names std {
+              {
+                name ml "Burstein SR",
+                affil str "Feil Family Brain and Mind Research Institute,
+ Weill Cornell Medicine, 407 East 61st Street, New York, NY 10065, USA; Weill
+ Cornell Graduate School of Medical Sciences, Weill Cornell Medicine, 1300
+ York Avenue, New York, NY 10021, USA."
+              },
+              {
+                name ml "Kim HJ",
+                affil str "Feil Family Brain and Mind Research Institute,
+ Weill Cornell Medicine, 407 East 61st Street, New York, NY 10065, USA."
+              },
+              {
+                name ml "Fels JA",
+                affil str "Feil Family Brain and Mind Research Institute,
+ Weill Cornell Medicine, 407 East 61st Street, New York, NY 10065, USA; Weill
+ Cornell Graduate School of Medical Sciences, Weill Cornell Medicine, 1300
+ York Avenue, New York, NY 10021, USA."
+              },
+              {
+                name ml "Qian L",
+                affil str "Feil Family Brain and Mind Research Institute,
+ Weill Cornell Medicine, 407 East 61st Street, New York, NY 10065, USA."
+              },
+              {
+                name ml "Zhang S",
+                affil str "Proteomics and Mass Spectrometry Facility, 139
+ Biotechnology Building, Cornell University, 526 Campus Road, Ithaca, NY
+ 14853, USA."
+              },
+              {
+                name ml "Zhou P",
+                affil str "Feil Family Brain and Mind Research Institute,
+ Weill Cornell Medicine, 407 East 61st Street, New York, NY 10065, USA."
+              },
+              {
+                name ml "Starkov AA",
+                affil str "Feil Family Brain and Mind Research Institute,
+ Weill Cornell Medicine, 407 East 61st Street, New York, NY 10065, USA."
+              },
+              {
+                name ml "Iadecola C",
+                affil str "Feil Family Brain and Mind Research Institute,
+ Weill Cornell Medicine, 407 East 61st Street, New York, NY 10065, USA."
+              },
+              {
+                name ml "Manfredi G",
+                affil str "Feil Family Brain and Mind Research Institute,
+ Weill Cornell Medicine, 407 East 61st Street, New York, NY 10065, USA.
+ Electronic address: gim2004@med.cornell.edu."
+              }
+            }
+          },
+          from journal {
+            title {
+              iso-jta "Biochim Biophys Acta Bioenerg",
+              ml-jta "Biochim Biophys Acta Bioenerg",
+              issn "0005-2728",
+              name "Biochimica et biophysica acta. Bioenergetics"
+            },
+            imp {
+              date std {
+                year 2018,
+                month 6
+              },
+              volume "1859",
+              issue "6",
+              pages "423-433",
+              language "eng",
+              pubstatus ppublish,
+              history {
+                {
+                  pubstatus received,
+                  date std {
+                    year 2017,
+                    month 9,
+                    day 12
+                  }
+                },
+                {
+                  pubstatus revised,
+                  date std {
+                    year 2018,
+                    month 3,
+                    day 8
+                  }
+                },
+                {
+                  pubstatus accepted,
+                  date std {
+                    year 2018,
+                    month 3,
+                    day 12
+                  }
+                },
+                {
+                  pubstatus other,
+                  date std {
+                    year 2019,
+                    month 6,
+                    day 1
+                  }
+                },
+                {
+                  pubstatus pubmed,
+                  date std {
+                    year 2018,
+                    month 3,
+                    day 20,
+                    hour 6,
+                    minute 0
+                  }
+                },
+                {
+                  pubstatus medline,
+                  date std {
+                    year 2018,
+                    month 6,
+                    day 26,
+                    hour 6,
+                    minute 0
+                  }
+                },
+                {
+                  pubstatus other,
+                  date std {
+                    year 2018,
+                    month 3,
+                    day 19,
+                    hour 6,
+                    minute 0
+                  }
+                }
+              }
+            }
+          },
+          ids {
+            pubmed 29550215,
+            pii "S0005-2728(18)30039-2",
+            doi "10.1016/j.bbabio.2018.03.006",
+            other {
+              db "pmc",
+              tag str "PMC5912174"
+            },
+            other {
+              db "mid",
+              tag str "NIHMS954470"
+            },
+            other {
+              db "ELocationID pii",
+              tag str "S0005-2728(18)30039-2"
+            },
+            other {
+              db "ELocationID doi",
+              tag str "10.1016/j.bbabio.2018.03.006"
+            }
+          }
+        }
+      },
+      comment "GeneRIF: Estrogen receptor beta modulates mitochondrial
+ permeability transition by regulating CypD interaction with OSCP."
+    },
+    pub {
+      pub {
+        pmid 9236206,
+        article {
+          title {
+            name "Increased expression of the cardiac L-type calcium channel
+ in estrogen receptor-deficient mice."
+          },
+          authors {
+            names std {
+              {
+                name ml "Johnson BD",
+                affil str "Department of Pharmacology, University of
+ Washington, Seattle, Washington 98195-7280, USA."
+              },
+              {
+                name ml "Zheng W"
+              },
+              {
+                name ml "Korach KS"
+              },
+              {
+                name ml "Scheuer T"
+              },
+              {
+                name ml "Catterall WA"
+              },
+              {
+                name ml "Rubanyi GM"
+              }
+            }
+          },
+          from journal {
+            title {
+              iso-jta "J. Gen. Physiol.",
+              ml-jta "J Gen Physiol",
+              issn "0022-1295",
+              name "The Journal of general physiology"
+            },
+            imp {
+              date std {
+                year 1997,
+                month 8
+              },
+              volume "110",
+              issue "2",
+              pages "135-140",
+              language "eng",
+              pubstatus ppublish,
+              history {
+                {
+                  pubstatus pubmed,
+                  date std {
+                    year 1997,
+                    month 8,
+                    day 1
+                  }
+                },
+                {
+                  pubstatus medline,
+                  date std {
+                    year 1997,
+                    month 8,
+                    day 1,
+                    hour 0,
+                    minute 1
+                  }
+                },
+                {
+                  pubstatus other,
+                  date std {
+                    year 1997,
+                    month 8,
+                    day 1,
+                    hour 0,
+                    minute 0
+                  }
+                }
+              }
+            }
+          },
+          ids {
+            pubmed 9236206,
+            other {
+              db "pmc",
+              tag str "PMC2233789"
+            }
+          }
+        }
+      }
+    },
+    pub {
+      pub {
+        pmid 9192892,
+        article {
+          title {
+            name "The transcriptional co-activator p/CIP binds CBP and
+ mediates nuclear-receptor function."
+          },
+          authors {
+            names std {
+              {
+                name ml "Torchia J",
+                affil str "Howard Hughes Medical Institute, University of
+ California, San Diego, La Jolla 92093-0648, USA."
+              },
+              {
+                name ml "Rose DW"
+              },
+              {
+                name ml "Inostroza J"
+              },
+              {
+                name ml "Kamei Y"
+              },
+              {
+                name ml "Westin S"
+              },
+              {
+                name ml "Glass CK"
+              },
+              {
+                name ml "Rosenfeld MG"
+              }
+            }
+          },
+          from journal {
+            title {
+              iso-jta "Nature",
+              ml-jta "Nature",
+              issn "0028-0836",
+              name "Nature"
+            },
+            imp {
+              date std {
+                year 1997,
+                month 6,
+                day 12
+              },
+              volume "387",
+              issue "6634",
+              pages "677-684",
+              language "eng",
+              pubstatus ppublish,
+              history {
+                {
+                  pubstatus pubmed,
+                  date std {
+                    year 1997,
+                    month 6,
+                    day 12
+                  }
+                },
+                {
+                  pubstatus medline,
+                  date std {
+                    year 2001,
+                    month 3,
+                    day 23,
+                    hour 10,
+                    minute 1
+                  }
+                },
+                {
+                  pubstatus other,
+                  date std {
+                    year 1997,
+                    month 6,
+                    day 12,
+                    hour 0,
+                    minute 0
+                  }
+                }
+              }
+            }
+          },
+          ids {
+            pubmed 9192892,
+            doi "10.1038/42652"
+          }
+        }
+      }
+    },
+    pub {
+      pub {
+        pmid 9058381,
+        article {
+          title {
+            name "Cloning, chromosomal localization, and functional analysis
+ of the murine estrogen receptor beta."
+          },
+          authors {
+            names std {
+              {
+                name ml "Tremblay GB",
+                affil str "Molecular Oncology Group, Boyal Victoria Hospital
+ Montreal, Quebec, Canada."
+              },
+              {
+                name ml "Tremblay A"
+              },
+              {
+                name ml "Copeland NG"
+              },
+              {
+                name ml "Gilbert DJ"
+              },
+              {
+                name ml "Jenkins NA"
+              },
+              {
+                name ml "Labrie F"
+              },
+              {
+                name ml "Giguere V"
+              }
+            }
+          },
+          from journal {
+            title {
+              iso-jta "Mol. Endocrinol.",
+              ml-jta "Mol Endocrinol",
+              issn "0888-8809",
+              name "Molecular endocrinology (Baltimore, Md.)"
+            },
+            imp {
+              date std {
+                year 1997,
+                month 3
+              },
+              volume "11",
+              issue "3",
+              pages "353-365",
+              language "eng",
+              pubstatus ppublish,
+              history {
+                {
+                  pubstatus pubmed,
+                  date std {
+                    year 1997,
+                    month 3,
+                    day 1
+                  }
+                },
+                {
+                  pubstatus medline,
+                  date std {
+                    year 1997,
+                    month 3,
+                    day 1,
+                    hour 0,
+                    minute 1
+                  }
+                },
+                {
+                  pubstatus other,
+                  date std {
+                    year 1997,
+                    month 3,
+                    day 1,
+                    hour 0,
+                    minute 0
+                  }
+                }
+              }
+            }
+          },
+          ids {
+            pubmed 9058381,
+            doi "10.1210/mend.11.3.9902"
+          }
+        }
+      }
+    },
+    pub {
+      pub {
+        pmid 9027582,
+        article {
+          title {
+            name "Isolation, characterization, and chromosomal mapping of a
+ novel cDNA clone encoding human selenium binding protein."
+          },
+          authors {
+            names std {
+              {
+                name ml "Chang PW",
+                affil str "Department of Biochemistry, Chinese University of
+ Hong Kong, Shatin, Hong Kong."
+              },
+              {
+                name ml "Tsui SK"
+              },
+              {
+                name ml "Liew C"
+              },
+              {
+                name ml "Lee CC"
+              },
+              {
+                name ml "Waye MM"
+              },
+              {
+                name ml "Fung KP"
+              }
+            }
+          },
+          from journal {
+            title {
+              iso-jta "J. Cell. Biochem.",
+              ml-jta "J Cell Biochem",
+              issn "0730-2312",
+              name "Journal of cellular biochemistry"
+            },
+            imp {
+              date std {
+                year 1997,
+                month 2
+              },
+              volume "64",
+              issue "2",
+              pages "217-224",
+              language "eng",
+              pubstatus ppublish,
+              history {
+                {
+                  pubstatus pubmed,
+                  date std {
+                    year 1997,
+                    month 2,
+                    day 1
+                  }
+                },
+                {
+                  pubstatus medline,
+                  date std {
+                    year 2000,
+                    month 6,
+                    day 20,
+                    hour 9,
+                    minute 0
+                  }
+                },
+                {
+                  pubstatus other,
+                  date std {
+                    year 1997,
+                    month 2,
+                    day 1,
+                    hour 0,
+                    minute 0
+                  }
+                }
+              }
+            }
+          },
+          ids {
+            pubmed 9027582,
+            pii "10.1002/(SICI)1097-4644(199702)64:2<217::AID-JCB5>3.0.CO;2-#"
+          }
+        }
+      }
+    },
+    pub {
+      pub {
+        pmid 8977441,
+        article {
+          title {
+            name "Estrogen receptors are essential for female sexual
+ receptivity."
+          },
+          authors {
+            names std {
+              {
+                name ml "Rissman EF",
+                affil str "Department of Biology, University of Virginia,
+ Charlottesville 22903, USA. efr2f@virginia.edu"
+              },
+              {
+                name ml "Early AH"
+              },
+              {
+                name ml "Taylor JA"
+              },
+              {
+                name ml "Korach KS"
+              },
+              {
+                name ml "Lubahn DB"
+              }
+            }
+          },
+          from journal {
+            title {
+              iso-jta "Endocrinology",
+              ml-jta "Endocrinology",
+              issn "0013-7227",
+              name "Endocrinology"
+            },
+            imp {
+              date std {
+                year 1997,
+                month 1
+              },
+              volume "138",
+              issue "1",
+              pages "507-510",
+              language "eng",
+              pubstatus ppublish,
+              history {
+                {
+                  pubstatus pubmed,
+                  date std {
+                    year 1997,
+                    month 1,
+                    day 1
+                  }
+                },
+                {
+                  pubstatus medline,
+                  date std {
+                    year 1997,
+                    month 1,
+                    day 1,
+                    hour 0,
+                    minute 1
+                  }
+                },
+                {
+                  pubstatus other,
+                  date std {
+                    year 1997,
+                    month 1,
+                    day 1,
+                    hour 0,
+                    minute 0
+                  }
+                }
+              }
+            }
+          },
+          ids {
+            pubmed 8977441,
+            doi "10.1210/endo.138.1.4985"
+          }
+        }
+      }
+    },
+    comment "~Transcript Variant: This variant (1) encodes the longer isoform
+ (1).",
+    comment "~Publication Note:  This RefSeq record includes a subset of the
+ publications that are available for this gene. Please see the Gene record to
+ access additional publications.",
+    user {
+      type str "RefGeneTracking",
+      data {
+        {
+          label str "Status",
+          data str "Validated"
+        },
+        {
+          label str "Assembly",
+          data fields {
+            {
+              label id 0,
+              data fields {
+                {
+                  label str "accession",
+                  data str "AK054413.1"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    user {
+      type str "StructuredComment",
+      data {
+        {
+          label str "StructuredCommentPrefix",
+          data str "##Evidence-Data-START##"
+        },
+        {
+          label str "Transcript exon combination",
+          data str "AK054413.1, AK054290.1 [ECO:0000332]"
+        },
+        {
+          label str "RNAseq introns",
+          data str "single sample supports all introns SAMN00849374,
+ SAMN00849381 [ECO:0000348]"
+        },
+        {
+          label str "StructuredCommentSuffix",
+          data str "##Evidence-Data-END##"
+        }
+      }
+    },
+    update-date std {
+      year 2019,
+      month 3,
+      day 10
+    }
+  },
+  seq-set {
+    seq {
+      id {
+        other {
+          accession "NM_207707",
+          version 1
+        },
+        gi 46877095
+      },
+      descr {
+        title "Mus musculus estrogen receptor 2 (beta) (Esr2), transcript
+ variant 1, mRNA",
+        molinfo {
+          biomol mRNA
+        },
+        create-date std {
+          year 2004,
+          month 4,
+          day 29
+        }
+      },
+      inst {
+        repr raw,
+        mol rna,
+        length 3362,
+        seq-data ncbi2na 'BCB6EA4B7F927DD49E7A57FE0291DDAB5797DD529F724D05177E
+01F5EA2C8A2BAA27A5E8A89A7EE6947A4D5FA4D6ADE4B22DE925964A7898414BA798B5674A858A
+02C6EDE4FC8839008883B5159CA4F51795B8B7788934ED4DEE5DF74428FFDD27885C64213A2340
+07453425F1F55E7DF307B252D4D715FA24EB54DCCD5F5D73B2225B460C7494E13DC4B5E7B8E071
+2EF549245AC17A0AEA5EF6521E42540EE73A507DE845DDD7F25151E50D367DDCE48174022D7EBB
+824234720445F97B0122215E08A09FA6A26BEE5257BC72D426508A8E747DE65B792E3CE4DEACD3
+C6BB7AD7B828EC297FFC02093D0A130E1CCDED49460D2EC532108169B009E5297961F642EF182C
+A0EB42EE8D4A2202BBAB160CB1821220B949892B93E5E0409422052EA44455AB8289C79E07778B
+56249EB9D15E7A09E25150EE72E25B549395F458A5D4E38ED5D1827A784281EB9138FA7A94200D
+5E9FEE89D25EFA142D65DFA0279E8E8AE78EBAA78EE99D4D85156909D37F9D485DBDE84AD74821
+5D1E91BE648608B9ED50A8E2A82E6E82A3DE80DFE139D7A618691AF5B8BC01E491020CDEEEE0A5
+38F75D0752CEC55FA716425282488B25A09E11173E064B848E57ADEAE3F608BA0DDF54924B4B5B
+7A505D78E7DFDD3B4A44D2C10A93A04DE749382E400EEB56BB185E79E88E7839D119F62AC42D74
+376AB78B9E7612284B089022A75481752D12E1A529E8A68E3C438EB482EA13B15C936EA5D17CA9
+E1FAD1B157C546F99F54A2D2AEBEAFBAED57B14A1F1E7839E2F707ECC17C829DDBEC7F5377F951
+FA004DF08BDE83802B40B787E828FA5FA1280280B8663116DCC203A1EC81AEEB4D03617F83AEDF
+72147E3ECA1E00513E10D076FD93D71744A5EE2874E1BB0EAF3ECD0214208C3AD09FA3B85FBD75
+D7235DFDF5E7E9F130723CF6B7B783BAD1ED123C23F0337FF0EF8BD7E09CEFAEFF77777777F748
+44444449F4A5F4CBBB7D4F9EE098C53850A41EFFFFF5421F3F3F4ECCE2E4FB67B7D21114822A4D
+2354F323AF389453BAF9EA2F8DD08DD682248ADF079E2137752550A41DFC08104FC3EA9E9F12FD
+22BD2D74F3A52097A5935208EEB9E88299E20F713FE3782925208FA7FB7D44A494A2827740254D
+844B8447D750C294C5CF704294C5DF08B947D53A9424CF40514E47E044F000000917D0'H,
+        hist {
+          assembly {
+            {
+              type partial,
+              dim 2,
+              segs denseg {
+                dim 2,
+                numseg 1,
+                ids {
+                  gi 46877095,
+                  gi 26344226
+                },
+                starts {
+                  0,
+                  1
+                },
+                lens {
+                  3362
+                },
+                strands {
+                  plus,
+                  plus
+                }
+              }
+            }
+          }
+        }
+      },
+      annot {
+        {
+          data ftable {
+            {
+              data imp {
+                key "regulatory"
+              },
+              comment "putative",
+              location int {
+                from 3339,
+                to 3344,
+                strand plus,
+                id gi 46877095
+              },
+              qual {
+                {
+                  qual "regulatory_class",
+                  val "polyA_signal_sequence"
+                }
+              }
+            },
+            {
+              data imp {
+                key "polyA_site"
+              },
+              comment "putative",
+              location pnt {
+                point 3361,
+                strand plus,
+                id gi 46877095
+              }
+            },
+            {
+              data gene {
+                locus "Esr2",
+                desc "estrogen receptor 2 (beta)",
+                syn {
+                  "ERbeta",
+                  "ER[b]",
+                  "Estrb"
+                }
+              },
+              location int {
+                from 0,
+                to 3361,
+                strand plus,
+                id gi 46877095
+              },
+              dbxref {
+                {
+                  db "GeneID",
+                  tag id 13983
+                },
+                {
+                  db "MGI",
+                  tag str "MGI:109392"
+                }
+              }
+            },
+            {
+              data imp {
+                key "misc_feature"
+              },
+              comment "upstream in-frame stop codon",
+              location int {
+                from 329,
+                to 331,
+                strand plus,
+                id gi 46877095
+              }
+            }
+          }
+        }
+      }
+    },
+    seq {
+      id {
+        other {
+          accession "NP_997590",
+          version 1
+        },
+        gi 46877096
+      },
+      descr {
+        title "estrogen receptor beta isoform 1 [Mus musculus]",
+        molinfo {
+          biomol peptide
+        },
+        create-date std {
+          year 2004,
+          month 4,
+          day 29
+        }
+      },
+      inst {
+        repr raw,
+        mol aa,
+        length 567,
+        seq-data ncbieaa "MSICASSHKDFSQLRPTQDMEIKNSPSSLTSPASYNCSQSILPLEHGPIYIP
+SSYVESRHEYSAMTFYSPAVMNYSVPSSTGNLEGGPVRQTASPNVLWPTSGHLSPLATHCQSSLLYAEPQKSPWCEAR
+SLEHTLPVNRETLKRKLGGSGCASPVTSPSAKRDAHFCAVCSDYASGYHYGVWSCEGCKAFFKRSIQGHNDYICPATN
+QCTIDKNRRKSCQACRLRKCYEVGMVKCGSRRERCGYRIVRRQRSASEQVHCLNKAKRTSGHTPRVKELLLNSLSPEQ
+LVLTLLEAEPPNVLVSRPSMPFTEASMMMSLTKLADKELVHMIGWAKKIPGFVELSLLDQVRLLESCWMEVLMVGLMW
+RSIDHPGKLIFAPDLVLDRSSEDPHWHVAQTKSAVPRDEGKCVEGILEIFDMLLATTARFRELKLQHKEYLCVKAMIL
+LNSSMYPLATASQEAESSRKLTHLLNAVTDALVWVISKSGISSQQQSVRLANLLMLLSHVRHISNKGMEHLLSMKCKN
+VVPVYDLLLEMLNAHTLRGYKSSISGSECCSTEDSKSKEGSQNLQSQ"
+      },
+      annot {
+        {
+          data ftable {
+            {
+              data prot {
+                name {
+                  "estrogen receptor beta isoform 1",
+                  "ER-beta",
+                  "nuclear receptor subfamily 3 group A member 2",
+                  "estrogen receptor beta",
+                  "oestrogen receptor beta"
+                }
+              },
+              location int {
+                from 0,
+                to 566,
+                id gi 46877096
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  annot {
+    {
+      data ftable {
+        {
+          data cdregion {
+            code {
+              id 1
+            }
+          },
+          comment "isoform 1 is encoded by transcript variant 1",
+          product whole gi 46877096,
+          location int {
+            from 347,
+            to 2050,
+            strand plus,
+            id gi 46877095
+          },
+          dbxref {
+            {
+              db "CCDS",
+              tag str "CCDS25988.1"
+            }
+          }
+        }
+      }
+    },
+    {
+      name "exons",
+      data ftable {
+        {
+          data imp {
+            key "exon"
+          },
+          location int {
+            from 0,
+            to 312,
+            strand plus,
+            id gi 46877095
+          },
+          qual {
+            {
+              qual "inference",
+              val "alignment:Splign:2.1.0"
+            }
+          }
+        },
+        {
+          data imp {
+            key "exon"
+          },
+          location int {
+            from 313,
+            to 765,
+            strand plus,
+            id gi 46877095
+          },
+          qual {
+            {
+              qual "inference",
+              val "alignment:Splign:2.1.0"
+            }
+          }
+        },
+        {
+          data imp {
+            key "exon"
+          },
+          location int {
+            from 766,
+            to 938,
+            strand plus,
+            id gi 46877095
+          },
+          qual {
+            {
+              qual "inference",
+              val "alignment:Splign:2.1.0"
+            }
+          }
+        },
+        {
+          data imp {
+            key "exon"
+          },
+          location int {
+            from 939,
+            to 1055,
+            strand plus,
+            id gi 46877095
+          },
+          qual {
+            {
+              qual "inference",
+              val "alignment:Splign:2.1.0"
+            }
+          }
+        },
+        {
+          data imp {
+            key "exon"
+          },
+          location int {
+            from 1056,
+            to 1355,
+            strand plus,
+            id gi 46877095
+          },
+          qual {
+            {
+              qual "inference",
+              val "alignment:Splign:2.1.0"
+            }
+          }
+        },
+        {
+          data imp {
+            key "exon"
+          },
+          location int {
+            from 1356,
+            to 1494,
+            strand plus,
+            id gi 46877095
+          },
+          qual {
+            {
+              qual "inference",
+              val "alignment:Splign:2.1.0"
+            }
+          }
+        },
+        {
+          data imp {
+            key "exon"
+          },
+          location int {
+            from 1495,
+            to 1548,
+            strand plus,
+            id gi 46877095
+          },
+          qual {
+            {
+              qual "inference",
+              val "alignment:Splign:2.1.0"
+            }
+          }
+        },
+        {
+          data imp {
+            key "exon"
+          },
+          location int {
+            from 1549,
+            to 1682,
+            strand plus,
+            id gi 46877095
+          },
+          qual {
+            {
+              qual "inference",
+              val "alignment:Splign:2.1.0"
+            }
+          }
+        },
+        {
+          data imp {
+            key "exon"
+          },
+          location int {
+            from 1683,
+            to 1863,
+            strand plus,
+            id gi 46877095
+          },
+          qual {
+            {
+              qual "inference",
+              val "alignment:Splign:2.1.0"
+            }
+          }
+        },
+        {
+          data imp {
+            key "exon"
+          },
+          location int {
+            from 1864,
+            to 3361,
+            strand plus,
+            id gi 46877095
+          },
+          qual {
+            {
+              qual "inference",
+              val "alignment:Splign:2.1.0"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
