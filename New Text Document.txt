@@ -1,0 +1,10 @@
+https://www.tutorialspoint.com/pyspark/pyspark_environment_setup.htm
+https://www.linode.com/docs/databases/hadoop/install-configure-run-spark-on-top-of-hadoop-yarn-cluster/
+https://www.cloudera.com/documentation/enterprise/5-3-x/topics/cdh_ig_yarn_tuning.html
+https://spark.apache.org/docs/latest/configuration.html
+https://spark.apache.org/docs/latest/running-on-yarn.html#spark-properties
+https://spark.apache.org/docs/latest/monitoring.html
+https://www.dezyre.com/apache-spark-tutorial/pyspark-tutorial
+https://www.tutorialkart.com/apache-spark/scala-spark-shell-example/
+https://data-flair.training/blogs/install-apache-spark-multi-node-cluster/
+https://docs.hortonworks.com/HDPDocuments/HDP3/HDP-3.1.0/running-spark-applications/content/running_sample_spark_2_x_applications.html
