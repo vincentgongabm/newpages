@@ -1,14 +1,16 @@
-<style>
-	@media (max-width:450px){
-		#table1 thead tr th:nth-child(1){padding: 15px 7px;}
-		#table1 thead tr th:nth-child(2){padding: 15px 7px;}
-		#table1 thead tr th:nth-child(3){padding: 15px 7px;}
-		#table1 thead tr th:nth-child(4){padding: 15px 7px;}
-		#table1 tbody tr td:nth-child(1){padding: 15px 7px;}
-		#table1 tbody tr td:nth-child(2){padding: 15px 7px;}
-		#table1 tbody tr td:nth-child(3){padding: 15px 7px;}
-		#table1 tbody tr td:nth-child(4){padding: 15px 7px;}
-	}
+<style xml="space">
+	<!--
+		@media (max-width:450px){
+			#table1 thead tr th:nth-child(1){padding: 15px 7px;}
+			#table1 thead tr th:nth-child(2){padding: 15px 7px;}
+			#table1 thead tr th:nth-child(3){padding: 15px 7px;}
+			#table1 thead tr th:nth-child(4){padding: 15px 7px;}
+			#table1 tbody tr td:nth-child(1){padding: 15px 7px;}
+			#table1 tbody tr td:nth-child(2){padding: 15px 7px;}
+			#table1 tbody tr td:nth-child(3){padding: 15px 7px;}
+			#table1 tbody tr td:nth-child(4){padding: 15px 7px;}
+		}
+		-->
 </style>
 <h1 id="abm-category-home-title">Primer Design &amp; Synthesis Service</h1>
 <nav id="abm-navbar" class="navbar navbar-fixed-top abm-navbar abm-affix abm-category-navbar-relative hidden-xs">
@@ -53,40 +55,46 @@
 				<table id="table1" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table1">
 					<thead>
 						<tr>
-							<th>Service&nbsp;Name</th>
+							<th>Service Name</th>
 							<th>Unit</th>
-							<th>Cat.&nbsp;No.</th>
-							<th>Unit&nbsp;Price</th>
+							<th>Cat. No.</th>
+							<th>Unit Price</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>Primer Design Service</td>
-							<td>1&nbsp;Pair&nbsp;Design</td>
+							<td>1 Pair Design</td>
 							<td>C130</td>
 							<td>$<span class="customServicePriceGeoIP">80.00</span></td>
 						</tr>
 						<tr>
-							<td>Primer Synthesis (10 nmol)</td>
-							<td>1&nbsp;Base</td>
+							<td>Primer Synthesis (25 nmol)</td>
+							<td>1 Base</td>
 							<td>C132</td>
-							<td>$<span class="customServicePriceGeoIP">0.45</span></td>
+							<td>$<span class="customServicePriceGeoIP">0.35</span>*</td>
 						</tr>
 						<tr>
-							<td>Primer Synthesis (50 nmol)</td>
-							<td>1&nbsp;Base</td>
+							<td>Primer Synthesis (100 nmol)</td>
+							<td>1 Base</td>
 							<td>C133</td>
-							<td>$<span class="customServicePriceGeoIP">1.25</span></td>
+							<td>$<span class="customServicePriceGeoIP">0.70</span>*</td>
 						</tr>
 						<tr>
-							<td>sgRNA PCR Primer Pair Design &amp; Synthesis Service (10 nmol/primer)</td>
-							<td>1&nbsp;Pair</td>
+							<td>Primer Synthesis (250 nmol)</td>
+							<td>1 Base</td>
+							<td>C231</td>
+							<td>$<span class="customServicePriceGeoIP">1.25</span>*</td>
+						</tr>
+						<tr>
+							<td>sgRNA PCR Primer Pair Design &amp; Synthesis Service (25 nmol/primer)</td>
+							<td>1 Pair</td>
 							<td>C336</td>
 							<td>$<span class="customServicePriceGeoIP">99.00</span></td>
 						</tr>
 					</tbody>
 				</table>
-				*Minimum primer length requirement = 15 bp
+				* To qualify for this price, a minimum order of $<span class="customServicePriceGeoIP">35.00</span> is required. In addition to primers, other products can be ordered to reach the minimum order of $<span class="customServicePriceGeoIP">35.00</span>.
 				<p><a href="/primer-design-synthesis-service-inquiry" target="_blank"><button class="custom-service-inquire-button-normal" style="float: right;">Inquire</button></a></p>
 			</div>
 			<div class="col-lg-4"></div>
@@ -97,43 +105,34 @@
 	<div class="row">
 		<div class="col-lg-8">
 			<h3 class="abm-perfect-h3">Additional Info</h3>
-			<strong>abm</strong> offers standard desalted custom DNA oligo synthesis in two different production scales. All synthesized DNA oligos are shipped in lyophilized format and the standard turnaround time is 5-7 business days. The following table outlines our synthesis scale and the minimum guarantee OD yield for each service. <br /><br />
+			<strong>abm</strong> offers standard desalted custom DNA oligo synthesis in three different synthesis scales. All synthesized DNA oligos are shipped in lyophilized format and the standard turnaround time is around 5-7 business days. The following table outlines our synthesis scale and the minimum guaranteed yield for each service. <br /><br />
 			<table id="table2" class="bootstrap-table bootstrap-table-hover abm-service-table abm-perfect-table2">
 				<thead>
 					<tr>
-						<th>Cat.&nbsp;No</th>
+						<th>Cat. No</th>
 						<th>Synthesis Scale</th>
-						<th>Minimum Guarantee OD yield</th>
-						<th style="text-align: left;">Max. Oligo Length</th>
+						<th>Minimum Guaranteed Yield</th>
+						<th>Minimum Required Primer Length</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td style="vertical-align: middle;" rowspan="3"><b>C132</b></td>
-						<td style="vertical-align: middle;" rowspan="3">10 nmol</td>
-						<td>1.5 OD (15-19nt)</td>
-						<td style="vertical-align: middle; text-align: left; color: black;" rowspan="3">60mer</td>
+						<td style="vertical-align: middle;"><b>C132</b></td>
+						<td style="vertical-align: middle;">25 nmol</td>
+						<td>12 nmol</td>
+						<td>15-60 nt</td>
 					</tr>
 					<tr>
-						<td>2.0 OD (20-45nt)</td>
+						<td style="vertical-align: middle;"><b>C133</b></td>
+						<td style="vertical-align: middle;">100 nmol</td>
+						<td>30 nmol</td>
+						<td>10-90 nt</td>
 					</tr>
 					<tr>
-						<td>2.0 OD (46-60nt)</td>
-					</tr>
-					<tr>
-						<td style="vertical-align: middle;" rowspan="4"><b>C133</b></td>
-						<td style="vertical-align: middle;" rowspan="4">50 nmol</td>
-						<td>3.0 OD (15-19nt)</td>
-						<td style="vertical-align: middle; text-align: left; color: black;" rowspan="4">90mer</td>
-					</tr>
-					<tr>
-						<td>6.0 OD (20-45nt)</td>
-					</tr>
-					<tr>
-						<td>9.0 OD (46-60nt)</td>
-					</tr>
-					<tr>
-						<td>9.0 OD (61-90nt)</td>
+						<td style="vertical-align: middle;"><b>C231</b></td>
+						<td style="vertical-align: middle;">250 nmol</td>
+						<td>50 nmol</td>
+						<td>5-100 nt</td>
 					</tr>
 				</tbody>
 			</table>
@@ -209,7 +208,7 @@
 			<h3 class="abm-perfect-h3">Documents</h3>
 			<div>
 				<ul class="cleanlist">
-					<li><img src="/pub/media/catalog/category/imgs/perfect_page/PDF.png" /> <a class="black-link doclinks" href="/pub/media/catalog/customservice/primer-design-synthesis/Primer-Order-Form (1).xlsx">Primer Order Form</a></li>
+					<li><img src="/pub/media/catalog/category/imgs/perfect_page/PDF.png" /> <a class="black-link doclinks" href="/pub/media/catalog/customservice/primer-design-synthesis/Order-Form-Primer-Synthesis.xlsx">Primer Order Form</a></li>
 				</ul>
 			</div>
 		</div>
