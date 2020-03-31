@@ -43,4 +43,4 @@ group by producttable.product_id) as productoptiontable
 on catalog_product_entity.entity_id = productoptiontable.product_id) as productskuthirdoptionvaluetable
 on productskuthirdoptionvaluetable.thridoption = catalog_product_option_type_value.option_id) as option3
 
-on option12.productsku = option3.productsku
+on option12.productsku = option3.productsku 
