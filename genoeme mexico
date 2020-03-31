@@ -1,5 +1,4 @@
-select option12.*, option3.sku as option3sku from 
-
+select concat(option12.productsku, option12.option1sku, option12.option2sku, option3.sku) as finalsku from 
 (select option1.productsku, option1.sku as option1sku, option2.sku as option2sku from 
 (select productskufirstoptionvaluetable.productsku, catalog_product_option_type_value.sku from catalog_product_option_type_value JOIN
 (SELECT catalog_product_entity.sku as productsku,  productoptiontable.min as firstoption FROM
