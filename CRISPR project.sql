@@ -1,4 +1,6 @@
-select concat(option12.productsku, option12.option1sku, option12.option2sku, option3.sku) as finalsku from 
+
+select * from
+(select concat(option12.productsku, option12.option1sku, option12.option2sku, option3.sku) as finalsku from 
 (select option1.productsku, option1.sku as option1sku, option2.sku as option2sku from 
 (select productskufirstoptionvaluetable.productsku, catalog_product_option_type_value.sku from catalog_product_option_type_value JOIN
 (SELECT catalog_product_entity.sku as productsku,  productoptiontable.min as firstoption FROM
@@ -42,4 +44,13 @@ group by producttable.product_id) as productoptiontable
 on catalog_product_entity.entity_id = productoptiontable.product_id) as productskuthirdoptionvaluetable
 on productskuthirdoptionvaluetable.thridoption = catalog_product_option_type_value.option_id) as option3
 
-on option12.productsku = option3.productsku 
+on option12.productsku = option3.productsku) as complete
+
+left join 
+
+(select catno from abm_customsearch) as abmsearch
+
+on complete.finalsku = abmsearch.catno
+
+where abmsearch.catno is null
+
