@@ -8,12 +8,3 @@ https://www.dezyre.com/apache-spark-tutorial/pyspark-tutorial
 https://www.tutorialkart.com/apache-spark/scala-spark-shell-example/
 https://data-flair.training/blogs/install-apache-spark-multi-node-cluster/
 https://docs.hortonworks.com/HDPDocuments/HDP3/HDP-3.1.0/running-spark-applications/content/running_sample_spark_2_x_applications.html
-<<<<<<< HEAD
-test
-=======
-<<<<<<< HEAD
-test
-=======
-Gibberish
->>>>>>> 84257afcef68b02124e49c9a79b6375dda112995
->>>>>>> 7a46e34723fe8c81dcf572e1407d12897c844ef0
