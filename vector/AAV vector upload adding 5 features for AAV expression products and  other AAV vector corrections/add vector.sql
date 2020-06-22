@@ -1,3 +1,25 @@
-INSERT INTO `bitnami_magento`.`abm_customsearch` (`id`, `oldPname`, `name`, `accession_number_general`, `description`, `sku`, `catno`, `gene_name`, `gene_full_name`, `alias`, `list_of_species`, `oldcatno`, `unit_quantity`, `vector`, `titer`, `cell_type_general`, `application`, `system`, `insert_size`, `list_of_markers`, `altAccessionNum`, `alt_accession_number`, `previous_gene_symbol`, `filter_promoter`, `tag`, `target_sequence`, `serotype`, `hgnc_id`, `appearance_general`, `vector_size`, `growth_properties_general`, `morphology`, `chromosome_location`, `concentration`, `sequencing_primers_general`, `components`, `conversion_of_od`, `chemical_modification`, `format_general`, `protein_type`, `protein_family`, `protein_function`, `purification_method`, `source_text`, `expressed_region_text`, `swiss_prot_text`, `molecular_weight`, `endotoxin_level`, `purity`, `biological_activity_text`, `oos_message`, `storage_buffer`, `storage_condition`, `growth_medium`, `propagation_method`, `shelf_life`, `qc`, `shipping_conditions`, `note`, `note_internal`, `reconstitution`, `cloning_sites`, `insert_sequence`, `inventory_location`, `lead_time`, `library`, `qty`, `supplier_general`, `sn`, `csn`, `ssn`, `dsn`, `price`, `old_price`, `species`, `species_int`, `features`, `features_int`, `vector_virus_cell`, `vector_virus_cell_int`, `source_table`, `disclaimer_general`, `guarantee`, `online`, `subculture_protocol`, `caution`, `tony`)
+INSERT INTO `abm_customsearch` (`oldPname`, `accession_number_general`, `description`, `catno`, `gene_name`, `gene_full_name`, `alias`, `list_of_species`, `unit_quantity`, `vector`, `system`, `insert_size`, `filter_promoter`, `tag`, `vector_size`, `chromosome_location`, `format_general`, `oos_message`, `storage_condition`, `shipping_conditions`, `lead_time`, `guarantee`)
 VALUES
-('', 'PLCB2 AAV Vector (Human) (CAGGS) (CBH-GFP)', NULL, 'BC000939', 'This ready-to-use AAV is part of abm’s AAV Expression System and can be used directly to transiently over-express your gene of interest in a wide range of host cells or animal models.', NULL, '369401011810', 'PLCB2', 'phospholipase C, beta 2', 'FLJ38135, FLJ38135', 'Human', 'NULL', '1 &mu;g', 'pAAV-G-CAGGS-CBH-gcGFP-hGH-amp', NULL, NULL, NULL, 'AAV Vector', '550', NULL, NULL, '', NULL, 'CAGGS', 'CAGGS', NULL, '', NULL, NULL, '6792', NULL, NULL, '15Q15.1', NULL, NULL, NULL, NULL, NULL, 'vector', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1-3 Weeks', NULL, 'Store AAV vectors at -20°C', NULL, NULL, NULL, NULL, 'AAV vectors are stable at room temperature for short term storage and are shipped with gel ice packs. For long term storage, it is recommended to store the vectors at -20°C and avoid repeated freeze-thaw cycles.', NULL, NULL, NULL, NULL, '', NULL, 'Inquire', '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', '', '', NULL, 'abm guarantees that the correct ORF construct is provided and the mRNA expression is displayed upon successful transduction. If this is not the case, we will provide a one-time replacement. Customers must provide adequate data to show >80% transfection efficiency with a positive control, plus additional qPCR data or a western blot to evaluate the level of gene expression. The replacement will not be covered by the same guarantee.\r\nPlease note that due to the large number of variables applicable, any further expression analysis (e.g. protein expression) is not covered by the guarantee, as such analysis is dependent on the end user\'s experimental conditions.\r\n', '', NULL, '', '0');
+('PLCB2 AAV Vector (Human) (hSync) (CBH-GFP)',
+'BC000939',
+'This ready-to-use AAV is part of abm’s AAV Expression System and can be used directly to transiently over-express your gene of interest in a wide range of host cells or animal models.',
+'369401012210',
+'PLCB2',
+'phospholipase C, beta 2',
+'FLJ38135, FLJ38135',
+'Human',
+'1 &mu;g',
+'pAAV-G-hSyn-CBH-gcGFP-hGH-amp',
+'AAV Vector',
+'1830',
+'hSyn',
+'gcGFP',
+'5532',
+'15Q15.1',
+'vector',
+'1-3 Weeks',
+'Store AAV vectors at -20°C',
+'AAV vectors are stable at room temperature for short term storage and are shipped with gel ice packs. For long term storage, it is recommended to store the vectors at -20°C and avoid repeated freeze-thaw cycles.', 'Inquire', 'abm guarantees that the correct ORF construct is provided and the mRNA expression is displayed upon successful transduction. If this is not the case, we will provide a one-time replacement. Customers must provide adequate data to show >80% transfection efficiency with a positive control, plus additional qPCR data or a western blot to evaluate the level of gene expression. The replacement will not be covered by the same guarantee.\r\nPlease note that due to the large number of variables applicable, any further expression analysis (e.g. protein expression) is not covered by the guarantee, as such analysis is dependent on the end user\'s experimental conditions.\r\n');
+
+
+

@@ -7,3 +7,5 @@ SELECT * FROM `catalog_product_option_type_title` where option_type_id=19862526;
 SELECT * FROM `catalog_product_option_type_price` where option_type_id=22018085;-- find option price
 
 SELECT * FROM `abm_customsearch` where catno = 369401011810;
+
+369401011810 id = 20678699
