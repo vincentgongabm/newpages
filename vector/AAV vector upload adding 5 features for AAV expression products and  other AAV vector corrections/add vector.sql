@@ -3,7 +3,7 @@ VALUES
 ('PLCB2 AAV Vector (Human) (hSync) (CBH-GFP)',
 'BC000939',
 'This ready-to-use AAV is part of abm’s AAV Expression System and can be used directly to transiently over-express your gene of interest in a wide range of host cells or animal models.',
-'369401012210',
+'369401011811',
 'PLCB2',
 'phospholipase C, beta 2',
 'FLJ38135, FLJ38135',
